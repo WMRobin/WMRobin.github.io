@@ -6,7 +6,7 @@ title: About me
 Willard (Will) Robinson is PhD student in economics at North Carolina State University’s Poole College of Management.
 
 ## Research
-His research interests lie in environmental and resource economics.
+My research interests lie in environmental and resource economics.
 I have experience conducting benefit-cost analysis using revealed and state preference methods as well as using plausibly exogeneous sources of variation in the market for education.
 
 ## Education
