@@ -2,7 +2,8 @@
 title: Welcome to my website
 feature_image: "/uploads/images/crazies.jpg"
 feature_text: |
-  ## Hello world
+  ### Crazy Mountains outside of Bozeman, MT
 ---
 
-There isn't much going on here yet, but watch this space
+Welcome to my website.
+This is under development.
