@@ -1,6 +1,6 @@
 ---
 title: Welcome to my website
-feature_image: _static/images/bridgerbowl.jpg
+feature_image: "_static/images/bridgerbowl.jpg"
 feature_text: |
   ## Hello world
 ---
