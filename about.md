@@ -11,8 +11,8 @@ I have experience conducting benefit-cost analysis using revealed and state pref
 
 ## Education
 * Appalachian State University, 2020
-** BA, Economics (concentration: natural resource economics and policy analysis, minor: mathematics)
+  * BA, Economics (concentration: natural resource economics and policy analysis, minor: mathematics)
 * Montana State University, 2022
-** MS, Applied Economics (thesis: The Economic Impact of School Closures)
+  * MS, Applied Economics (thesis: The Economic Impact of School Closures)
 * North Carolina State University, current
-** PhD, Economics
+  * PhD, Economics
