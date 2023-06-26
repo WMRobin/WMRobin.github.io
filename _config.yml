@@ -40,8 +40,8 @@ navigation_header:
   url: /about/
 - title: Teaching
   url: /teaching/
-- title: Blog
-  url: /blog/
+# - title: Blog
+#   url: /blog/
 
 # Footer nav
 navigation_footer:
