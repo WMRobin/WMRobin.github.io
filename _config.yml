@@ -26,7 +26,7 @@ baseurl: ''
 title: 'Will Robinson'
 description: 'This is my personal website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: "uploads/headshot-2019.jpg"
 
 # Pagination
 paginate: 5
