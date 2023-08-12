@@ -26,7 +26,7 @@ baseurl: ''
 title: 'Will Robinson'
 description: 'This is my personal website'
 permalink: pretty
-logo: "uploads/images/headshot-2019.jpg"
+logo: "uploads/images/linville-portrait.jpg"
 
 # Pagination
 paginate: 5
