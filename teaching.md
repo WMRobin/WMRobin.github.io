@@ -10,6 +10,8 @@ title: Teaching
 > __ARE 336: Introduction to Environmental Economics__  
 > <u>Graduate TA:</u> Fall 2023
 
+---
+
 # Montana State University
 > __ECNS 201: Principles of Macroeconomics__  
 > <u>Instructor of Record:</u> Fall 2021, Spring 2022  
