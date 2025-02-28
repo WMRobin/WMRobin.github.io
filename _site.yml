@@ -5,11 +5,16 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+      icon: fa-mountain-sun
     - text: "About"
       href: about.html
+      icon: fa-face-smile
     - text: "Research"
       href: research.html
+      icon: fa-pen
 output:
   html_document:
     theme: united
     css: style.css
+    includes:
+      in_header: "favicon.html"
