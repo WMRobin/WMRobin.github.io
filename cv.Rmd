@@ -1,0 +1,47 @@
+---
+title: "Willard Robinson"
+pagetitle: "CV | Willard Robinson"
+output:
+  html_document
+---
+
+[Click for PDF version.](cv/robinson-cv.pdf)
+
+## Education
+
+**Ph.D. Economics**, North Carolina State University, 2027 (expected)
+
+**M.S. Applied Economics**, Montana State University, 2022
+
+**B.A. Economics** (Mathematics minor, *summa cum laude*), Appalachian State University, 2020
+
+## Research experience
+
+### Graduate research assistant
+
+* Market design with [Umut Dur](https://sites.google.com/site/umutdur/) (NCSU)
+  * Jan. 2025 to present
+* Environmental policy with [Spencer Banzhaf](https://spencerbanzhaf.wordpress.ncsu.edu/) (NCSU)
+  * Jan. 2024 to May 2025
+* Agricultural and environmental policy with [Nick Hagerty](https://www.nickhagerty.com/) (MSU)
+  * Aug. 2020 to May 2022
+  
+### Undergraduate research assistant
+
+* Non-market valuation with [John Whitehead](https://economics.appstate.edu/directory/john-whitehead-phd) (ASU)
+  * June 2019 to May 2020
+* Experimental economics with [Brock Stoddard](https://sites.google.com/a/appstate.edu/brock_stoddard/home) (ASU)
+  * June 2019 to May 2020
+
+## Teaching experience
+
+### Graduate teaching assistant
+
+* ECG 715 (Ph.D.): Environmental and Resource Economics I
+  * Fall 2024
+* ECG 702 (Ph.D.): Microeconomic Theory II
+  * Spring 2024
+* ARE 336 (Undergraduate): Environmental and Resource Economics
+  * Fall 2023, Spring 2025
+* EC 201 (Undergraduate): Principles of Microeconomics
+  * Fall 2022, Spring 2023, Fall 2023

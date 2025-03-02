@@ -1,0 +1,17 @@
+---
+title: ""
+pagetitle: "Public goods | Willard Robinson"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+On this page, I have listed some "public goods" that I've made.
+The idea is that these are useful/interesting to me, and they may be useful/interesting to you, too!
+
+## Peer review allocation program
+
+```{r child = "public-goods/peer-review-allocation-program.rmd"}
+```

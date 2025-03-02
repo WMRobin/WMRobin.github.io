@@ -6,15 +6,28 @@ navbar:
     - text: "Home"
       href: index.html
       icon: fa-mountain-sun
-    - text: "About"
-      href: about.html
-      icon: fa-face-smile
     - text: "Research"
       href: research.html
       icon: fa-pen
+    - text: "CV"
+      href: cv.html
+      icon: fa-file
+    - text: "Public goods"
+      href: public-goods.html
+      menu:
+        - text: "Peer review allocation program"
+          href: public-goods.html
+  right:
+    - icon: fa-solid fa-envelope
+      href: mailto:wmrobin3@ncsu.edu
+    - icon: fa-brands fa-x-twitter
+      href: https://twitter.com/WMRobinEcon
+    - icon: fa-brands fa-github
+      href: https://github.com/WMRobin
 output:
   html_document:
     theme: united
-    css: style.css
     includes:
-      in_header: "favicon.html"
+      in_header:
+        # "favicon.html"
+        "header.html"

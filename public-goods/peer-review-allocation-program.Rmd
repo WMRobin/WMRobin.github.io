@@ -1,0 +1,9 @@
+---
+title: "Peer review allocation program"
+---
+
+I wrote this program to help with assigning papers to reviewers for a peer review group I helped start.
+To use it, just upload a CSV that contains an identifier and a ranked list.
+There are multiple allocation algorithms that can be used including serial dictator, YRMHIGYT, ...
+
+[Download here](public-goods/peer-review-allocation-program.jl)

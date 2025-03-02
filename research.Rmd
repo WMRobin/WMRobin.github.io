@@ -6,10 +6,5 @@ title: "Research"
 
 ## Works in progress
 
-*Adoption Costs for Offsets: Evidence from California*
-
-*Additionality in the Market for Environmental Services* (with [Spencer Banzhaf](https://spencerbanzhaf.wordpress.ncsu.edu/))
-
-*Alternative Financing for America's National Parks*
-
-*Recreation Welfare Effects with Climate Change-Induced Migration*
+```{r child = "research/works-in-progress.rmd"}
+```

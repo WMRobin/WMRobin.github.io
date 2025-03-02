@@ -2,6 +2,13 @@
 title: "My Website"
 ---
 
+<figure style= "max-width: 33%;" margin = "20">
+  <img src="images/robinson-headshot.jpg" >
+</figure>
+
+<br>
+
 Hello!
 
 My name is Willard (Will) Robinson. I'm an Economics Ph.D. student at North Carolina State University.
+For more information about me and my research, please see my [CV](cv.html) and [research](research.html).
