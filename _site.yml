@@ -14,9 +14,6 @@ navbar:
       icon: fa-file
     - text: "Public goods"
       href: public-goods.html
-      menu:
-        - text: "Peer review allocation program"
-          href: public-goods.html
   right:
     - icon: fa-solid fa-envelope
       href: mailto:wmrobin3@ncsu.edu
