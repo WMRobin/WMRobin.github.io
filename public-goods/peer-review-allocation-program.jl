@@ -1,8 +1,6 @@
 using CSV
 
-
-
-objects = ["a","b","c"]
+objects = ["a","b","c"];
 
 p1 = ["b" "c" "a"];
 p2 = ["a" "b" "c"];

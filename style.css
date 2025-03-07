@@ -10,19 +10,31 @@
 
 /*------------- Whole Document---------------- */
 
-body {
-    font-family: 'Muli';
-    font-size: 19px;
-    background-color: var(--floral-white);
+figure {
+  margin-right: 15px;
+  text-align: center;
+  float: left; 
 }
 
-/* links */
-a { 
-  /*color: #CC0000; /* wolfpack red main bar */
-  color: var(--space-cadet);
+figure img {
+  /* Maintain aspect ratio */
+  height: auto;
+  /* Remove any extra space below the image */
+  display: block;
 }
 
-a:hover {
- /*color: #990000; /* Reynolds red when hovering */
- color: var(--tiffany-blue);
+/* Style for the caption */
+figcaption {
+  /* Optional: Add a background color to improve readability */
+  /*background-color: rgba(0, 0, 0, 0.7);
+  /* Optional: Set text color */
+  /*  color: #fff;
+  /* Optional: Add padding for better aesthetics */
+  /*  padding: 10px;
+  box-sizing: border-box;
+  /* Include padding in the width */
+  display: block;
+  /* Ensure the caption is a block-level element */
+  /* Add space between the image and the caption */
+  margin-top: 5px;
 }

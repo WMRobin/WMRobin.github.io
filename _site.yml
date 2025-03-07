@@ -24,7 +24,7 @@ navbar:
 output:
   html_document:
     theme: united
+    css: style.css
     includes:
       in_header:
-        # "favicon.html"
         "header.html"
