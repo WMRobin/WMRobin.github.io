@@ -1,82 +1,71 @@
 using CSV
 
+# ===================================== #
+# =============== SETUP =============== #
+# ===================================== #
+
 objects = ["a","b","c"];
+individuals = ["p1", "p2", "p3", "p4"];
 
-p1 = ["b" "c" "a"];
-p2 = ["a" "b" "c"];
-p3 = ["a" "c" "b"];
-p4 = ["b" "c" "a"]
-preferences = [p1; p2; p3];
+# Define the preferences of each individual over the goods
+preferences = Dict(
+    "p1" => ["a", "b", "c"],
+    "p2" => ["c", "a", "b"],
+    "p3" => ["c", "a", "b"],
+    "p4" => ["b", "a", "c"]
+)
 
-order = [3 2 1];
+function calculate_payoff(allocation, preferences, max_payoff)
+    return max_payoff - findfirst(x -> x .== allocation, preferences)
+end
 
-function serial_dictator(preferences, objects, order)
-    # initialize outcome vector -- will be vector of triples
-    outcome = [];
+# =================================================== #
+# =============== SERIAL DICTATORSHIP =============== #
+# =================================================== #
 
-    # all objects are available before first move
-    available = objects;
+function serial_dictator(preferences, objects, order, surplus_people)
+    allocation = Dict()
+    available_goods = Set(objects)
+    unused_goods = Set(objects)
+    used_goods = Set()
+    multi_count = 0
 
-    # allocate best available to each person
     for i in 1:length(order)
-        # individual's preferences
-        preferences_i = preferences[i,:]
-        
-        for j in 1:length(preferences_i)
-            # if the jth object is available, assign it, calculate payoff, and move to next person
-            if preferences_i[j] in available
-                push!(outcome, (order[i], preferences_i[j], j)) # (individual, allocation, payoff)
-                available = setdiff(available, [preferences_i[j]])
+        ind = individuals[order[i]]
+        for preferred_good in preferences[ind]
+            if preferred_good in available_goods
+                allocation[ind] = preferred_good
+                println("Individual $ind gets good $preferred_good")
+                delete!(unused_goods, preferred_good)
+                
+                if preferred_good in used_goods
+                    multi_count += 1
+                end
+                
+                push!(used_goods, preferred_good)
+                
+                # once we have allocated to all surplus people, we can allocate the rest of the goods
+                if multi_count >= surplus_people
+                    available_goods = unused_goods
+                end
+                
                 break
             end
         end
     end
-    return outcome
+
+    return allocation
 end
 
-serial_dictator(preferences, objects, [2 1 3])
+surplus_people = length(individuals) - length(objects);
 
+order = [1,2,3,4];
 
+serial_dictator_allocation = serial_dictator(preferences, objects, order, surplus_people);
 
-preferences = [p1; p2; p3; p4]
-# initialize outcome vector -- will be vector of triples
-outcome = [];
+serial_dictator_payoff = Dict();
 
-# all objects are available before first move
-available = objects;
-
-order = [1 2 3 4]
-# how many more people than objects do we have?
-surplus = 1;
-objects_surplus = repeat(objects, surplus+1)
-
-outcome = []
-available = objects_surplus
-allocations = []
-payoffs = []
-# allocate best available to each person
-for i in 1:length(order)
-# for i in 1:3
-    # individual's preferences
-    preferences_i = preferences[i,:]
-    
-    for j in 1:length(preferences_i)
-        # if the jth object is available, assign it, calculate payoff, and move to next person
-        if preferences_i[j] in available
-        # if occursin(preferences_i[j], available)
-            push!(outcome, (order[i], preferences_i[j], j)) # (individual, allocation, payoff)
-            push!(allocations, preferences_i[j])
-            push!(payoffs, j)
-            if length(findall(x -> x == preferences_i[j], allocations)) > surplus
-                available = setdiff(available, allocations)
-            else
-                popat!(available, findall(x -> x == preferences_i[j], available)[1])
-            end
-            # available = setdiff(available, [preferences_i[j]])
-            break
-        end
-    end
+for ind in individuals
+    serial_dictator_payoff[ind] = calculate_payoff(serial_dictator_allocation[ind], preferences[ind], length(objects))
+    println("Individual $ind has payoff $(serial_dictator_payoff[ind])")
 end
-outcome
-allocations
-payoffs
