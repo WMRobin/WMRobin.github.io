@@ -4,15 +4,6 @@ title: "Serial dictator program (Julia)"
 
 I wrote this program to help with assigning papers to reviewers for a peer review group I helped start.
 
-To use it, just upload a CSV with column names that are the names of individuals.
-For example, the data for a 3-person, 3-object setting should look like
-
-| Adam                 | Bob                 | Candace                 |
-| -------------------- | ------------------- | ----------------------- |
-| Adam's first choice  | Bob's first choice  | Candace's first choice  |
-| Adam's second choice | Bob's second choice | Candace's second choice |
-| Adam's third choice  | Bob's third choice  | Candace's third choice  |
-
 The program is written in the wonderful [Julia](https://julialang.org/) language, but I am more than happy to write similar programs in other languages (most easily in R or Stata) if there is a demand!
 
 The serial dictator mechanism is used.
@@ -59,3 +50,13 @@ The total welfare of the allocation for serial dictator order $k$ is
 The payoff to order 1, then, is 5.
 
 [Download the program here](public-goods/serial-dictator-program/serial-dictator-program.jl) and use this [example data](public-goods/serial-dictator-program/example-preferences.csv) to see how it works!
+
+Note that to use it, you should upload a CSV with column names that are the names of individuals and their preferences descending in favorability.
+For example, the data for a 3-person, 3-object setting should look like
+
+| Adam                 | Bob                 | Candace                 |
+| -------------------- | ------------------- | ----------------------- |
+| Adam's first choice  | Bob's first choice  | Candace's first choice  |
+| Adam's second choice | Bob's second choice | Candace's second choice |
+| Adam's third choice  | Bob's third choice  | Candace's third choice  |
+

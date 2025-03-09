@@ -386,35 +386,6 @@ useful/interesting to you, too!</p>
 <h2>Serial dictator program</h2>
 <p>I wrote this program to help with assigning papers to reviewers for a
 peer review group I helped start.</p>
-<p>To use it, just upload a CSV with column names that are the names of
-individuals. For example, the data for a 3-person, 3-object setting
-should look like</p>
-<table>
-<thead>
-<tr class="header">
-<th>Adam</th>
-<th>Bob</th>
-<th>Candace</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Adam’s first choice</td>
-<td>Bob’s first choice</td>
-<td>Candace’s first choice</td>
-</tr>
-<tr class="even">
-<td>Adam’s second choice</td>
-<td>Bob’s second choice</td>
-<td>Candace’s second choice</td>
-</tr>
-<tr class="odd">
-<td>Adam’s third choice</td>
-<td>Bob’s third choice</td>
-<td>Candace’s third choice</td>
-</tr>
-</tbody>
-</table>
 <p>The program is written in the wonderful <a
 href="https://julialang.org/">Julia</a> language, but I am more than
 happy to write similar programs in other languages (most easily in R or
@@ -481,6 +452,36 @@ href="public-goods/serial-dictator-program/serial-dictator-program.jl">Download
 the program here</a> and use this <a
 href="public-goods/serial-dictator-program/example-preferences.csv">example
 data</a> to see how it works!</p>
+<p>Note that to use it, you should upload a CSV with column names that
+are the names of individuals and their preferences descending in
+favorability. For example, the data for a 3-person, 3-object setting
+should look like</p>
+<table>
+<thead>
+<tr class="header">
+<th>Adam</th>
+<th>Bob</th>
+<th>Candace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adam’s first choice</td>
+<td>Bob’s first choice</td>
+<td>Candace’s first choice</td>
+</tr>
+<tr class="even">
+<td>Adam’s second choice</td>
+<td>Bob’s second choice</td>
+<td>Candace’s second choice</td>
+</tr>
+<tr class="odd">
+<td>Adam’s third choice</td>
+<td>Bob’s third choice</td>
+<td>Candace’s third choice</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
