@@ -11,7 +11,7 @@ output:
 On this page, I have listed some "public goods" that I've made.
 The idea is that these are useful/interesting to me, and they may be useful/interesting to you, too!
 
-## Peer review allocation program
+## Serial dictator program
 
-```{r child = "public-goods/peer-review-allocation-program.rmd"}
+```{r child = "public-goods/serial-dictator-program.rmd"}
 ```

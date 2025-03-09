@@ -12,3 +12,5 @@ Hello!
 
 My name is Willard (Will) Robinson. I'm an Economics Ph.D. student at North Carolina State University.
 For more information about me and my research, please see my [CV](cv.html) and [research](research.html).
+
+I will be spending the 2025 summer at the [Property and Environment Research Center](https://perc.org/) in beautiful [Bozeman, MT](https://www.bozeman.net/) as a Graduate Fellow.
