@@ -1,8 +1,6 @@
 ---
 title: "Willard Robinson"
 pagetitle: "CV | Willard Robinson"
-output:
-  html_document
 ---
 
 [Click for PDF version.](cv/robinson-cv.pdf)

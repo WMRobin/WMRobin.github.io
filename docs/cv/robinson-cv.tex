@@ -1,0 +1,343 @@
+\documentclass[11pt]{article}
+
+% Packages:
+\usepackage[
+ignoreheadfoot, % set margins without considering header and footer
+top=2 cm, % seperation between body and page edge from the top
+bottom=2 cm, % seperation between body and page edge from the bottom
+left=2 cm, % seperation between body and page edge from the left
+right=2 cm, % seperation between body and page edge from the right
+footskip=1.0 cm, % seperation between body and footer
+% showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+pdftitle={Willard Robinson CV},
+pdfauthor={Willard Robinson},
+pdfcreator={Willard Robinson},
+colorlinks=true,
+urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+%\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+	% left space:
+	-1pt
+}{
+	% top space:
+	0.3 cm
+}{
+	% bottom space:
+	0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+	\begin{itemize}[
+		topsep=0.10 cm,
+		parsep=0.10 cm,
+		partopsep=0pt,
+		itemsep=0pt,
+		leftmargin=0 cm + 10pt
+		]
+	}{
+	\end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+	\begin{itemize}[
+		topsep=0.10 cm,
+		parsep=0.10 cm,
+		partopsep=0pt,
+		itemsep=0pt,
+		leftmargin=10pt
+		]
+	}{
+	\end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+	\begin{adjustwidth}{
+			0 cm + 0.00001 cm
+		}{
+			0 cm + 0.00001 cm
+		}
+	}{
+	\end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+	\onecolentry
+	\def\secondColumn{#2}
+	\setcolumnwidth{\fill, 4.5 cm}
+	\begin{paracol}{2}
+	}{
+		\switchcolumn \raggedleft \secondColumn
+	\end{paracol}
+	\endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+	\onecolentry
+	\def\thirdColumn{#3}
+	\setcolumnwidth{, \fill, 4.5 cm}
+	\begin{paracol}{3}
+		{\raggedright #2} \switchcolumn
+	}{
+		\switchcolumn \raggedleft \thirdColumn
+	\end{paracol}
+	\endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+	\setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+	\par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+	\AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+		\put(
+		\LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+		\LenToUnit{\paperheight-1.0 cm}
+		){\vtop{{\null}\makebox[0pt][c]{
+					\small\color{gray}\textit{Last updated \today}\hspace{\widthof{Last updated \today}}
+		}}}%
+	}%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Willard Robinson
+	
+	\vspace{5 pt}
+	
+	\normalsize
+	\mbox{North Carolina State University}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{mailto:wmrobin3@ncsu.edu}{wmrobin3@ncsu.edu}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{828-620-0798}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://WMRobin.github.io/}{WMRobin.github.io}}%
+\end{header}
+
+\vspace{5 pt - 0.3 cm}
+
+
+\section{Education}
+
+
+\begin{twocolentry}{2027 (expected)}
+	\textbf{North Carolina State University},
+	Ph.D. Economics
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{2022}
+	\textbf{Montana State University},
+	M.S. Applied Economics
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{2020}
+	\textbf{Appalachian State University},
+	B.A. Economics
+	\textit{(summa cum laude)}
+\end{twocolentry}
+\vspace{-0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		Minor: Mathematics
+	\end{highlights}
+\end{onecolentry}
+
+
+\section{Works in progress}
+
+
+\begin{onecolentry}
+	\textit{Adoption Costs for Offsets: Evidence from California}
+\end{onecolentry}
+
+\begin{onecolentry}
+	\textit{Additionality in the Market for Environmental Services}, with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
+\end{onecolentry}
+
+\begin{onecolentry}
+	\textit{Alternative Financing for America’s National Parks}
+\end{onecolentry}
+
+\begin{onecolentry}
+	\textit{Recreation Welfare Effects with Climate Change-Induced Migration}
+\end{onecolentry}
+
+
+\section{Research experience}
+
+
+\begin{twocolentry}{Jan 2025 – present}
+	\textbf{Graduate research assistant},
+	Market design with \href{https://sites.google.com/site/umutdur/}{Umut Dur}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{Jan 2024 - present}
+	\textbf{Graduate research assistant},
+	Environmental policy with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{Aug 2020 - May 2022}
+	\textbf{Graduate research assistant},
+	Agricultural policy with \href{https://www.nickhagerty.com/}{Nick Hagerty}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{June 2019 - May 2020}
+	\textbf{Research assistant},
+	Non-market evaluation with \href{https://economics.appstate.edu/directory/john-whitehead-phd}{John Whitehead}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{June 2019 - May 2020}
+	\textbf{Research assistant},
+	Experimental economics with \href{https://sites.google.com/a/appstate.edu/brock_stoddard/home}{Brock Stoddard}
+\end{twocolentry}
+
+
+\section{Teaching experience}
+
+
+\begin{twocolentry}{NC State University}
+	\textbf{Graduate teaching assistant}
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item ECG 715 (Ph.D.): Environmental and Resource Economics \textit{Fall 2024}
+		\item ECG 702 (Ph.D.): Microeconomics II, \textit{Spring 2024}
+		\item ARE 336 (Undergrad.): Environmental and Resource Economics, \textit{Fall 2024, Spring 2025}
+		\item EC 201 (Undergrad.): Principles of Microeconomics, \textit{Fall 2022, Spring 2023, Fall 2023}
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{NC State University}
+	\textbf{Head graduate teaching assistant}
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item EC 201 (Undergrad.): Principles of Economics, \textit{Fall 2023}
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{Montana State University}
+	\textbf{Instructor of record}
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item ECNS 202: Principles of Macroeconomics, \textit{Fall 2021, Spring 2022}
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.10 cm}
+
+\begin{twocolentry}{Montana State University}
+	\textbf{Graduate teaching assistant}
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item ECNS 202 (Undergrad.): Principles of Macroeconomics, \textit{Summer 2021, Summer 2022}
+		\item ECNS 403R (Honors undergrad.): Introductory Econometrics, \textit{Fall 2020}
+	\end{highlights}
+\end{onecolentry}
+
+
+\section{Accepted presentations}
+
+\begin{twocolentry}{2024}
+	Appalachian Experimental and Environmental Workshop
+\end{twocolentry}
+\begin{twocolentry}{2020}
+	National Conference of Undergraduate Research
+\end{twocolentry}
+
+
+\section{Technical skills}
+
+
+\begin{onecolentry}
+	\textbf{Proficient:} Julia, \LaTeX, R, Stata
+\end{onecolentry}
+\begin{onecolentry}
+	\textbf{Familiar:} Git, HTML, Matlab, Python, SAS
+\end{onecolentry}
+	
+\end{document}
