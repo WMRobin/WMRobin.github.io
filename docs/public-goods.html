@@ -385,17 +385,47 @@ useful/interesting to you, too!</p>
 <div id="serial-dictator-program" class="section level2">
 <h2>Serial dictator program</h2>
 <p>I wrote this program to help with assigning papers to reviewers for a
-peer review group I helped start. To use it, just upload a CSV that
-contains an identifier and a ranked list. The program is written in the
-wonderful <a href="https://julialang.org/">Julia</a> language, but I am
-more than happy to write similar programs in other languages (most
-easily in R or Stata) if there is a demand!</p>
+peer review group I helped start.</p>
+<p>To use it, just upload a CSV with column names that are the names of
+individuals. For example, the data for a 3-person, 3-object setting
+should look like</p>
+<table>
+<thead>
+<tr class="header">
+<th>Adam</th>
+<th>Bob</th>
+<th>Candace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adam’s first choice</td>
+<td>Bob’s first choice</td>
+<td>Candace’s first choice</td>
+</tr>
+<tr class="even">
+<td>Adam’s second choice</td>
+<td>Bob’s second choice</td>
+<td>Candace’s second choice</td>
+</tr>
+<tr class="odd">
+<td>Adam’s third choice</td>
+<td>Bob’s third choice</td>
+<td>Candace’s third choice</td>
+</tr>
+</tbody>
+</table>
+<p>The program is written in the wonderful <a
+href="https://julialang.org/">Julia</a> language, but I am more than
+happy to write similar programs in other languages (most easily in R or
+Stata) if there is a demand!</p>
 <p>The serial dictator mechanism is used. To illustrate, assume there
 are three papers to be assigned <span
 class="math inline">\(\{a,b,c\}\)</span> and three potential reviewers
-<span class="math inline">\(\{1,2,3\}\)</span>. Suppose reviewer <span
-class="math inline">\(i\)</span> has preferences <span
-class="math inline">\(P_i\)</span>.</p>
+<span class="math inline">\(\{1,2,3\}\)</span>. Reviewer <span
+class="math inline">\(i\)</span>’s preferences are denoted by <span
+class="math inline">\(P_i\)</span>. For this example, I’ll use the
+following preferences:</p>
 <p><span class="math display">\[
 \begin{array}{rl}
   P_1: &amp; a - b - c \\
@@ -403,7 +433,9 @@ class="math inline">\(P_i\)</span>.</p>
   P_3: &amp; b - a - c
 \end{array}
 \]</span></p>
-<p>We will consider all possible orders of dictatorship:</p>
+<p>To get the best possible allocation, the allocator wants to consider
+consider all possible orders of dictatorship. With three potential
+reviewers, these are:</p>
 <p><span class="math display">\[
 \begin{array}{rl}
   \text{order 1}: &amp; 1 \to 2 \to 3 \\
@@ -414,8 +446,8 @@ class="math inline">\(P_i\)</span>.</p>
   \text{order 6}: &amp; 3 \to 2 \to 1
 \end{array}
 \]</span></p>
-<p>Consider order 1. The allocation for dictator order 1 for individual
-<span class="math inline">\(i\)</span> is denoted <span
+<p>I’ll illustrate with order 1. The allocation for dictator order 1 for
+individual <span class="math inline">\(i\)</span> is denoted <span
 class="math inline">\(\mu_1(i)\)</span>.</p>
 <ol style="list-style-type: decimal">
 <li>Define the set of available objects as <span
@@ -446,9 +478,9 @@ class="math inline">\(k\)</span> is <span class="math display">\[V_k =
 1, then, is 5.</p>
 <p><a
 href="public-goods/serial-dictator-program/serial-dictator-program.jl">Download
-program here</a></p>
-<p><a href="public-goods/serial-dictator-program/">Download folder
-here</a></p>
+the program here</a> and use this <a
+href="public-goods/serial-dictator-program/example-preferences.csv">example
+data</a> to see how it works!</p>
 </div>
 
 
