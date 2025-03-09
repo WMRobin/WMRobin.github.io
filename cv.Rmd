@@ -3,7 +3,7 @@ title: "Willard Robinson"
 pagetitle: "CV | Willard Robinson"
 ---
 
-[Click for PDF version.](cv/robinson-cv.pdf)
+[Click for PDF version](cv/robinson-cv.pdf).
 
 ## Education
 
