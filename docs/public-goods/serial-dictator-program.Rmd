@@ -1,21 +1,32 @@
 ---
 title: "Serial dictator program (Julia)"
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 I wrote this program to help with assigning papers to reviewers for a peer review group I helped start.
 
-The program is written in the wonderful [Julia](https://julialang.org/) language, but I am more than happy to write similar programs in other languages (most easily in R or Stata) if there is a demand!
+The program is written in the wonderful <a href="https://julialang.org/" target="_blank">Julia</a> language, but I will happily translate it to other languages (most easily in R or Stata) if there is a demand!
 
-The serial dictator mechanism is used.
+The
+<a href="https://people.duke.edu/~aa88/articles/rsrcECMA.pdf" target="_blank">serial dictator</a>
+mechanism is used to fairly assign each reviewer a paper to review.
+The reviewers are given a list of papers, and they submit a rank ordered list.
+These lists are then fed into the mechanism and a fair allocation is output!
+
+### An example
+
 To illustrate, assume there are three papers to be assigned $\{a,b,c\}$ and three potential reviewers $\{1,2,3\}$.
 Reviewer $i$'s preferences are denoted by $P_i$.
 For this example, I'll use the following preferences:
 
 $$
-\begin{array}{rl}
-  P_1: & a - b - c \\
-  P_2: & a - c - b \\
-  P_3: & b - a - c
+\begin{array}{ccc}
+  P_1 & P_2 & P_3 \\ \hline
+  a & a & b \\
+  b & c & a \\
+  c & b & c
 \end{array}
 $$
 
@@ -33,21 +44,32 @@ $$
 \end{array}
 $$
 
+
+The allocation of dictator order $k$ for individual $i$ is denoted $\mu_k(i)$.
+
 I'll illustrate with order 1.
-The allocation for dictator order 1 for individual $i$ is denoted $\mu_1(i)$.
+The mechanism works according to the following steps:
 
-1. Define the set of available objects as $A_1 = \{1,2,3\}$
-1. Person 1 chooses first. All objects are in the available set, so she gets her most preferred item. So, $\mu_1(1) = a$. Update the set of available objects to be $A_2 = A_1 \setminus \{\mu_1(1)\}$.
-1. Person 2 chooses her most preferred item from the set of available objects, $A_2$. Her most preferred item is not available, so she gets her second-most preferred item. So, $\mu_1(2) = c$. Update the set of available objects to be $A_3 = A_2 \setminus \{\mu_1(1), \mu_1(2)\}$.
-1. There is only one item available, so the third person is assigned that item. So $\mu_1(3) = b$.
+0.  Define the set of available objects as $A_1 = \{1,2,3\}$
+0.  Person 1 chooses first. All objects are in the available set, so she gets her most preferred item. So, $\mu_1(1) = a$. Update the set of available objects to be $A_2 = A_1 \setminus \{\mu_1(1)\}$.
+0.  Person 2 chooses her most preferred item from $A_2$. Her most preferred item is not available, so she gets her second-most preferred item. So, $\mu_1(2) = c$. Update the set of available objects to be $A_3 = A_2 \setminus \{\mu_1(1), \mu_1(2)\}$.
+0.  There is only one item in the available set, so the third person is assigned that item. So $\mu_1(3) = b$. (her most preferred!)
 
-The final allocation for dictator order 1 is $\mu = (a,c,b)$.
-How well of are the people under this allocation?
-A simple way to calculate welfare is to subtract 4 from the ranking of the allocation.
-Let $P_i(\mu_1)$ be the ranking of person $i$'s allocated object, their payoff is then $4 - P_i(\mu_1)$.
+The final allocation for dictator order 1 is $\mu_1 = (a,c,b)$.
+
+How well off are the people under this allocation?
+A simple way to calculate an individual's welfare is to subtract 4 (the number of objects + 1) from the ranking of their allocation.
+We'll call this the "payoff" to the individual.
+
+Let $P_i(\mu_1)$ be the ranking of person $i$'s allocated object; their payoff is then $4 - P_i(\mu_1)$.
 The total welfare of the allocation for serial dictator order $k$ is
-\[V_k = \sum_{i=1}^3 \left(4 - P_i(\mu_k)\right).\]
-The payoff to order 1, then, is 5.
+$$V_k = \sum_{i=1}^3 \left(4 - P_i(\mu_k)\right).$$
+This means order 1 has a payoff of 5.
+
+The program goes through all permutations of dictatorship orders to find the one that maximizes payoff defined in this way.
+The program accepts more people than objects, but it cannot allocate more objects than people.
+
+### Download
 
 [Download the program here](public-goods/serial-dictator-program/serial-dictator-program.jl) and use this [example data](public-goods/serial-dictator-program/example-preferences.csv) to see how it works!
 
@@ -55,8 +77,7 @@ Note that to use it, you should upload a CSV with column names that are the name
 For example, the data for a 3-person, 3-object setting should look like
 
 | Adam                 | Bob                 | Candace                 |
-| -------------------- | ------------------- | ----------------------- |
+|----------------------|---------------------|-------------------------|
 | Adam's first choice  | Bob's first choice  | Candace's first choice  |
 | Adam's second choice | Bob's second choice | Candace's second choice |
 | Adam's third choice  | Bob's third choice  | Candace's third choice  |
-
