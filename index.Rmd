@@ -1,7 +1,39 @@
 ---
-title: "My Website"
 pagetitle: "Home | Willard Robinson"
 ---
+
+<style>
+  figure {
+    margin-right: 15px;
+    text-align: center;
+    float: left; 
+  }
+
+  figure img {
+    /* Maintain aspect ratio */
+    height: auto;
+    /* Remove any extra space below the image */
+    display: block;
+  }
+  
+  /* Style for the caption */
+   
+  figcaption {
+    /* Optional: Add a background color to improve readability */
+    /*background-color: rgba(0, 0, 0, 0.7);
+    /* Optional: Set text color */
+    /*  color: #fff;
+    /* Optional: Add padding for better aesthetics */
+    /*  padding: 10px;
+    box-sizing: border-box;
+    /* Include padding in the width */
+    display: block;
+    /* Ensure the caption is a block-level element */
+    /* Add space between the image and the caption */
+    margin-top: 5px;
+  }
+
+</style>
 
 <figure style= "max-width: 33%;" margin = "20">
   <img src="images/robinson-headshot.jpg">
@@ -12,7 +44,7 @@ pagetitle: "Home | Willard Robinson"
 Hello!
 
 My name is Willard (Will) Robinson. I'm an Economics Ph.D. student at North Carolina State University.
-For more information about me and my research, please see my [CV](cv.html) and [research](research.html).
+For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
 
 #### Summer 2025
 
