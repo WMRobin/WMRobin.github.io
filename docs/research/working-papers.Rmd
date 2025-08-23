@@ -6,6 +6,11 @@ title: ''
 Draft available upon request
 
 #### *Adoption Costs for Offsets: Evidence from California*
+```{r, echo = FALSE, fig.show="hold", out.width="25%", fig.cap = "", fig.alt = "Potential cost savings are larger, on average, for firms that use offsets."}
+knitr::include_graphics("images/research/cdf-potential-gains-cp13.png")
+knitr::include_graphics("images/research/cdf-potential-gains-cp4.png")
+
+```
 Draft available upon request
 
 #### *The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach* (with [Sasha Naumenko](https://www.linkedin.com/in/avn-econ), [Roger von Haefen](https://rvhaefen.wordpress.ncsu.edu/), and [Colton Leach](https://www.linkedin.com/in/colton-leach-54a080136/))

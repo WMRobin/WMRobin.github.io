@@ -38,7 +38,6 @@ pagetitle: "CV | Willard Robinson"
   * Fall 2025
 
 ### Graduate teaching assistant
-
 * ECG 715 (Ph.D.): Environmental and Resource Economics I
   * Fall 2024
 * ECG 702 (Ph.D.): Microeconomic Theory II

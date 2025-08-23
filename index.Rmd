@@ -1,6 +1,7 @@
 ---
 pagetitle: "Home | Willard Robinson"
 ---
+<meta name="google-site-verification" content="apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg" />
 
 <style>
   figure {
@@ -41,9 +42,10 @@ pagetitle: "Home | Willard Robinson"
 
 <br>
 
-Hello!
+Welcome to my site!
 
-My name is Willard (Will) Robinson. I'm an Economics Ph.D. student at North Carolina State University.
+My name is Willard (Will) Robinson. I'm a fourth-year Economics Ph.D. student at North Carolina State University, where I am affiliated with the Center for Environmental and Resource Economic Policy ([CEnREP](https://cenrep.ncsu.edu/person/willard-robinson/)).
+
 For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
 
 #### Summer 2025
