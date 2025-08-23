@@ -5,7 +5,10 @@ pagetitle: "Research | Willard Robinson"
 
 ## Working papers
 
+```{r child = "research/working-papers.Rmd"}
+```
+
 ## Works in progress
 
-```{r child = "research/works-in-progress.rmd"}
+```{r child = "research/works-in-progress.Rmd"}
 ```

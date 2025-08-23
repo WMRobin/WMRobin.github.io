@@ -33,6 +33,10 @@ pagetitle: "CV | Willard Robinson"
 
 ## Teaching experience
 
+### Instructor
+* ARE 336 (Undergraduate): Introduction to Environmental and Resource Economics
+  * Fall 2025
+
 ### Graduate teaching assistant
 
 * ECG 715 (Ph.D.): Environmental and Resource Economics I
