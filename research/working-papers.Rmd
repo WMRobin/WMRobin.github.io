@@ -1,17 +1,79 @@
 ---
-title: ''
+title: 'Working papers'
 ---
 
-#### *Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act*
-Draft available upon request
+<style>
+    figure {
+  display: table;
+  width: 50%;
+  margin:0;
+}
 
-#### *Adoption Costs for Offsets: Evidence from California*
-```{r, echo = FALSE, fig.show="hold", out.width="25%", fig.cap = "", fig.alt = "Potential cost savings are larger, on average, for firms that use offsets."}
-knitr::include_graphics("images/research/cdf-potential-gains-cp13.png")
-knitr::include_graphics("images/research/cdf-potential-gains-cp4.png")
+figcaption {
+  display: table-caption;
+  caption-side: top;
+}
 
+#content {
+  max-width: 80%;
+  height: 80%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+  overflow: scroll;
+}
+</style>
+
+
+#### ***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***
+**Draft available upon request**
+
+#### ***Adoption Costs for Offsets: Evidence from California***
+
+<div id="content" class="center">
+<div>
+<figure style="float:left; width:100%">
+<img src="images/research/california-cap-and-trade/ts-prices.png" alt="cat" width="30%">
+</figure>
+<figure style="float:left; width:100%">
+<img src="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" alt="cat" width="30%">
+</figure>
+<figure style="float:left; width:100%">
+<img src="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" alt="cat" width="30%">
+</figure>
+<figure style="float:left; width:100%">
+<img src="images/research/california-cap-and-trade/cdf-potential-gains-cp4.png" alt="cat" width="30%">
+</figure>
+</div>
+</div>
+
+```{r, echo=F, outwidth="33%", fig.cap="", fig.alt="Offsets are persistently cheaper than permits"}
+knitr::include_graphics(
+  "images/research/california-cap-and-trade/ts-prices.png"
+)
 ```
-Draft available upon request
 
-#### *The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach* (with [Sasha Naumenko](https://www.linkedin.com/in/avn-econ), [Roger von Haefen](https://rvhaefen.wordpress.ncsu.edu/), and [Colton Leach](https://www.linkedin.com/in/colton-leach-54a080136/))
-Draft available upon request
+```{r, echo=F, out.width="33%", fig.cap="", fig.alt="Clustering of offsets around zero and maximum amount"}
+knitr::include_graphics(
+  "images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png"
+)
+```
+
+```{r, echo = FALSE, out.width="33%", fig.cap = "", fig.alt = "Potential cost savings are larger, on average, for firms that use offsets."}
+knitr::include_graphics(
+  "images/research/california-cap-and-trade/cdf-potential-gains-cp13.png"
+)
+```
+</div>
+</div>
+
+
+**Draft available upon request**
+
+#### ***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with [Sasha Naumenko](https://www.linkedin.com/in/avn-econ), [Roger von Haefen](https://rvhaefen.wordpress.ncsu.edu/), and [Colton Leach](https://www.linkedin.com/in/colton-leach-54a080136/))
+**Draft available upon request**

@@ -3,6 +3,12 @@ title: "Willard Robinson"
 pagetitle: "CV | Willard Robinson"
 ---
 
+<style>
+    .section h4 {
+        color: #ae3910;
+    }
+</style>
+
 [Click for PDF version](cv/robinson-cv.pdf).
 
 ## Education
