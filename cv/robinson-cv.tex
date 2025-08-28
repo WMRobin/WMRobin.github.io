@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
 ignoreheadfoot, % set margins without considering header and footer
-top=2 cm, % seperation between body and page edge from the top
-bottom=2 cm, % seperation between body and page edge from the bottom
+top=1 cm, % seperation between body and page edge from the top
+bottom=1 cm, % seperation between body and page edge from the bottom
 left=2 cm, % seperation between body and page edge from the left
 right=2 cm, % seperation between body and page edge from the right
 footskip=1.0 cm, % seperation between body and footer
@@ -147,11 +147,6 @@ urlcolor=primaryColor
 
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
-
-% new command for external links:
-
-
-\begin{document}
 \newcommand{\AND}{\unskip
 	\cleaders\copy\ANDbox\hskip\wd\ANDbox
 	\ignorespaces
@@ -159,12 +154,15 @@ urlcolor=primaryColor
 \newsavebox\ANDbox
 \sbox\ANDbox{$|$}
 
+\begin{document}
+\vspace{-5ex}
+
 \begin{header}
-	\fontsize{25 pt}{25 pt}\selectfont Willard Robinson
-	
-	\vspace{5 pt}
-	
-	\normalsize
+	\fontsize{15 pt}{15 pt}\selectfont Willard Robinson
+
+	% \vspace{5 pt}
+
+	\footnotesize
 	\mbox{North Carolina State University}%
 	\kern 5.0 pt%
 	\AND%
@@ -180,152 +178,186 @@ urlcolor=primaryColor
 	\mbox{\hrefWithoutArrow{https://WMRobin.github.io/}{WMRobin.github.io}}%
 \end{header}
 
-\vspace{5 pt - 0.3 cm}
+\vspace{-1ex}
 
 
-\section{Education}
-
+\section{Education}%\footnotesize
 
 \begin{twocolentry}{2027 (expected)}
 	\textbf{North Carolina State University},
 	Ph.D. Economics
 \end{twocolentry}
 
-\vspace{0.10 cm}
+% \vspace{0.10 cm}
 
 \begin{twocolentry}{2022}
 	\textbf{Montana State University},
 	M.S. Applied Economics
 \end{twocolentry}
 
-\vspace{0.10 cm}
+% \vspace{0.10 cm}
 
 \begin{twocolentry}{2020}
 	\textbf{Appalachian State University},
 	B.A. Economics
-	\textit{(summa cum laude)}
-\end{twocolentry}
-\vspace{-0.10 cm}
-\begin{onecolentry}
+	\textit{\footnotesize (summa cum laude)}
+	\vspace{-0.5ex}
 	\begin{highlights}
-		Minor: Mathematics
+		\item[] \footnotesize Minor: Mathematics
+	\end{highlights}
+\end{twocolentry}
+% \vspace{-0.10 cm}
+% \begin{onecolentry}
+% 	\begin{highlights}
+% 		Minor: Mathematics
+% 	\end{highlights}
+% \end{onecolentry}
+
+
+\section{Working papers}
+
+
+% \begin{onecolentry}\footnotesize
+% 	\textit{The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach}
+% 	[with \href{https://www.linkedin.com/in/avn-econ}{\textbf{Sasha Naumenko}}, \href{https://www.linkedin.com/in/colton-leach-54a080136}{\textbf{Colton Leach}}, and \href{https://cenrep.ncsu.edu/person/roger-von-haefen/}{\textbf{Roger von Haefen}}] \\
+% 	\hspace{2ex} \textit{Submitted for review}
+% \end{onecolentry}
+
+% \begin{onecolentry}\footnotesize
+% 	\textit{Adoption Costs for Offsets: Evidence from California} \\
+% 	\hspace{2ex} Preparing to be submitted for review in December 2025
+% \end{onecolentry}
+
+% \begin{onecolentry}\footnotesize
+% 	\textit{Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act} \\
+% 	\hspace{2ex} Preparing to be submitted for review in December 2025
+% \end{onecolentry}
+
+\begin{onecolentry}%\footnotesize
+	\textit{The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach}
+	[with \href{https://www.linkedin.com/in/avn-econ}{\textbf{Sasha Naumenko}}, \href{https://www.linkedin.com/in/colton-leach-54a080136}{\textbf{Colton Leach}}, and \href{https://cenrep.ncsu.edu/person/roger-von-haefen/}{\textbf{Roger von Haefen}}]
+	\vspace{-1ex}
+	\begin{highlights}
+		\item[-] Submitted for review
+	\end{highlights}
+\end{onecolentry}
+
+\begin{onecolentry}%\footnotesize
+	\textit{Adoption Costs for Offsets: Evidence from California}
+	\vspace{-1ex}
+	\begin{highlights}
+		\item[-] Preparing to be submitted for review in December 2025
+	\end{highlights}
+\end{onecolentry}
+
+\begin{onecolentry}%\footnotesize
+	\textit{Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act}
+	\vspace{-1ex}
+	\begin{highlights}
+		\item[-] Preparing to be submitted for review in December 2025
 	\end{highlights}
 \end{onecolentry}
 
 
-\section{Works in progress}
-
+\section{Works in progress}%\footnotesize
 
 \begin{onecolentry}
-	\textit{Adoption Costs for Offsets: Evidence from California}
+	\textit{Alternative Financing for America's National Parks: An application of weak complementarity}
 \end{onecolentry}
 
 \begin{onecolentry}
-	\textit{Additionality in the Market for Environmental Services}, with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
-\end{onecolentry}
-
-\begin{onecolentry}
-	\textit{Alternative Financing for America’s National Parks}
+	\textit{Additionality in the Market for Environmental Services}
+	[with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{\textbf{Spencer Banzhaf}}]
 \end{onecolentry}
 
 \begin{onecolentry}
 	\textit{Recreation Welfare Effects with Climate Change-Induced Migration}
 \end{onecolentry}
 
+\begin{onecolentry}
+	\textit{Centralized Major Selection Procedures: An application of matching theory}
+	[with \href{https://sites.google.com/site/umutdur/home}{\textbf{Umut Dur}}]
+\end{onecolentry}
+
+\begin{onecolentry}
+	\textit{Using Matching Theory to Improve University Transfer Processes}
+	[with \href{https://sites.google.com/site/umutdur/home}{\textbf{Umut Dur}} and \href{https://www.linkedin.com/in/colton-leach-54a080136}{\textbf{Colton Leach}}]
+\end{onecolentry}
+
+\section{Teaching experience}
+ {\footnotesize \textit{Ph.D.} = Doctorate course, \textit{U.} = Undergraduate course, \textit{U.H.} = Undergraduate honors course}
+
+\textbf{Instructor of record}
+
+\begin{twocolentry}{NC State University}\footnotesize
+	ARE 336 (U): Introduction to Environmental and Resource Economics
+	-- \textit{Fall '25}
+\end{twocolentry}
+\begin{twocolentry}{Montana State University}\footnotesize
+	ECNS 202 (U): Principles of Macroeconomics
+	-- \textit{Fall '21, Spring '21}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\textbf{Graduate teaching assistant}
+
+\begin{twocolentry}{NC State University}\footnotesize
+	ARE 336 (\textit{U.}): Introduction to Environmental and Resource Economics
+	-- \textit{Fall '23, Spring '25} \\
+	ECG 715 (\textit{Ph.D.}): Environmental and Resource Economics
+	-- \textit{Fall '24} \\
+	ECG 702 (\textit{Ph.D.}): Microeconomic Theory II
+	-- \textit{Spring '24} \\
+	EC 201 (\textit{U.}): Principles of Microeconomics
+	-- \textit{Fall '22, Spring '22, Fall '23 (Head TA)}
+\end{twocolentry}
+\begin{twocolentry}{Montana State University}\footnotesize
+	ECNS 202 (\textit{U.}): Principles of Macroeconomics
+	-- \textit{Summer '21, Summer '22} \\
+	ECNS 403R (\textit{U.H.}): Introductory Econometrics
+	-- \textit{Fall '20}
+\end{twocolentry}
 
 \section{Research experience}
 
-
-\begin{twocolentry}{Jan 2025 – present}
-	\textbf{Graduate research assistant},
-	Market design with \href{https://sites.google.com/site/umutdur/}{Umut Dur}
+\begin{twocolentry}{Jan. 2025 - present}\footnotesize
+	\textbf{Graduate research assistant} in Market design with \href{https://sites.google.com/site/umutdur/home}{Umut Dur}
 \end{twocolentry}
 
-\vspace{0.10 cm}
-
-\begin{twocolentry}{Jan 2024 - present}
-	\textbf{Graduate research assistant},
+\begin{twocolentry}{Jan 2024 - present}\footnotesize
+	\textbf{CEnREP Graduate research assistant},
 	Environmental policy with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
 \end{twocolentry}
 
-\vspace{0.10 cm}
-
-\begin{twocolentry}{Aug 2020 - May 2022}
-	\textbf{Graduate research assistant},
-	Agricultural policy with \href{https://www.nickhagerty.com/}{Nick Hagerty}
+\begin{twocolentry}{Summer 2025}\footnotesize
+	\textbf{Graduate Fellow} at the \href{https://perc.org/people/willard-robinson/}{Property and Environment Research Center}
 \end{twocolentry}
 
-\vspace{0.10 cm}
+\begin{twocolentry}{Aug 2020 - May 2022}\footnotesize
+	\textbf{Graduate research assistant} in	Agricultural policy with \href{https://www.nickhagerty.com/}{Nick Hagerty}
+\end{twocolentry}
 
-\begin{twocolentry}{June 2019 - May 2020}
+\begin{twocolentry}{June 2019 - May 2020}\footnotesize
 	\textbf{Research assistant},
-	Non-market evaluation with \href{https://economics.appstate.edu/directory/john-whitehead-phd}{John Whitehead}
+	Non-market valuation with \href{https://economics.appstate.edu/directory/john-whitehead-phd}{John Whitehead}
 \end{twocolentry}
 
-\vspace{0.10 cm}
-
-\begin{twocolentry}{June 2019 - May 2020}
+\begin{twocolentry}{June 2019 - May 2020}\footnotesize
 	\textbf{Research assistant},
 	Experimental economics with \href{https://sites.google.com/a/appstate.edu/brock_stoddard/home}{Brock Stoddard}
 \end{twocolentry}
 
 
-\section{Teaching experience}
-
-
-\begin{twocolentry}{NC State University}
-	\textbf{Graduate teaching assistant}
-\end{twocolentry}
-\begin{onecolentry}
-	\begin{highlights}
-		\item ECG 715 (Ph.D.): Environmental and Resource Economics \textit{Fall 2024}
-		\item ECG 702 (Ph.D.): Microeconomics II, \textit{Spring 2024}
-		\item ARE 336 (Undergrad.): Environmental and Resource Economics, \textit{Fall 2024, Spring 2025}
-		\item EC 201 (Undergrad.): Principles of Microeconomics, \textit{Fall 2022, Spring 2023, Fall 2023}
-	\end{highlights}
-\end{onecolentry}
-
-\vspace{0.10 cm}
-
-\begin{twocolentry}{NC State University}
-	\textbf{Head graduate teaching assistant}
-\end{twocolentry}
-\begin{onecolentry}
-	\begin{highlights}
-		\item EC 201 (Undergrad.): Principles of Economics, \textit{Fall 2023}
-	\end{highlights}
-\end{onecolentry}
-
-\vspace{0.10 cm}
-
-\begin{twocolentry}{Montana State University}
-	\textbf{Instructor of record}
-\end{twocolentry}
-\begin{onecolentry}
-	\begin{highlights}
-		\item ECNS 202: Principles of Macroeconomics, \textit{Fall 2021, Spring 2022}
-	\end{highlights}
-\end{onecolentry}
-
-\vspace{0.10 cm}
-
-\begin{twocolentry}{Montana State University}
-	\textbf{Graduate teaching assistant}
-\end{twocolentry}
-\begin{onecolentry}
-	\begin{highlights}
-		\item ECNS 202 (Undergrad.): Principles of Macroeconomics, \textit{Summer 2021, Summer 2022}
-		\item ECNS 403R (Honors undergrad.): Introductory Econometrics, \textit{Fall 2020}
-	\end{highlights}
-\end{onecolentry}
-
-
 \section{Accepted presentations}
 
-\begin{twocolentry}{2024}
+\begin{twocolentry}{2025}\footnotesize
+	PERC Seminar series ($\times$2)
+\end{twocolentry}
+\begin{twocolentry}{2024}\footnotesize
 	Appalachian Experimental and Environmental Workshop
 \end{twocolentry}
-\begin{twocolentry}{2020}
+\begin{twocolentry}{2020}\footnotesize
 	National Conference of Undergraduate Research
 \end{twocolentry}
 
@@ -333,11 +365,11 @@ urlcolor=primaryColor
 \section{Technical skills}
 
 
-\begin{onecolentry}
+\begin{onecolentry}\footnotesize
 	\textbf{Proficient:} Julia, \LaTeX, R, Stata
 \end{onecolentry}
-\begin{onecolentry}
+\begin{onecolentry}\footnotesize
 	\textbf{Familiar:} Git, HTML, Matlab, Python, SAS
 \end{onecolentry}
-	
+
 \end{document}
