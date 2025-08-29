@@ -3,8 +3,15 @@ title: "Teaching"
 pagetitle: "Teaching | Willard Robinson"
 ---
 
-#### ARE 336: Introduction to Environmental and Resource Economics
+### ARE 336: Introduction to Environmental and Resource Economics
 
-##### Problem sets
+#### Problem sets
 
-[Problem set 1](teaching/are-336/problem-sets/fall-2025/ps-1.pdf)
+Fall 2025
+<ul>
+    <li>
+    <a href="teaching/are-336/problem-sets/fall-2025/ps-1.pdf" target="_blank">Problem set 1</a>
+    <!-- -- <a href="teaching/are-336/problem-sets/fall-2025/ps-1-solution.pdf" target="_blank">Solutions</a> -->
+    -- Solutions (posted after 09/05/2025)
+    </li>
+</ul>
