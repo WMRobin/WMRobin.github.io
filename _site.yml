@@ -12,8 +12,12 @@ navbar:
     - text: "CV"
       href: cv.html
       icon: fa-file
+    - text: "Teaching"
+      href: teaching.html
+      icon: fa-book-open-reader
     - text: "Public goods"
       href: public-goods.html
+      icon: fa-code
   right:
     - icon: fa-solid fa-envelope
       href: mailto:wmrobin3@ncsu.edu
