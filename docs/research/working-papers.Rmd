@@ -19,61 +19,78 @@ figcaption {
   height: 80%;
 }
 
-.center {
-  display: block;
+.papers {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   margin-left: auto;
   margin-right: auto;
   width: auto;
   text-align: center;
-  overflow: scroll;
+  /* overflow: scroll; */
+}
+
+.h4 {
+  margin-top: 5em;
 }
 </style>
 
-
-#### ***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***
-**Draft available upon request**
-
 #### ***Adoption Costs for Offsets: Evidence from California***
 
-<div id="content" class="center">
-<div>
-<figure style="float:left; width:100%">
-<img src="images/research/california-cap-and-trade/ts-prices.png" alt="cat" width="30%">
-</figure>
-<figure style="float:left; width:100%">
-<img src="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" alt="cat" width="30%">
-</figure>
-<figure style="float:left; width:100%">
-<img src="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" alt="cat" width="30%">
-</figure>
-<figure style="float:left; width:100%">
-<img src="images/research/california-cap-and-trade/cdf-potential-gains-cp4.png" alt="cat" width="30%">
-</figure>
-</div>
-</div>
-
-```{r, echo=F, outwidth="33%", fig.cap="", fig.alt="Offsets are persistently cheaper than permits"}
-knitr::include_graphics(
-  "images/research/california-cap-and-trade/ts-prices.png"
-)
-```
-
-```{r, echo=F, out.width="33%", fig.cap="", fig.alt="Clustering of offsets around zero and maximum amount"}
-knitr::include_graphics(
-  "images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png"
-)
-```
-
-```{r, echo = FALSE, out.width="33%", fig.cap = "", fig.alt = "Potential cost savings are larger, on average, for firms that use offsets."}
-knitr::include_graphics(
-  "images/research/california-cap-and-trade/cdf-potential-gains-cp13.png"
-)
-```
-</div>
+<div id="content" class="papers">
+  <figure style="width:100%">
+    <a href="images/research/california-cap-and-trade/ts-prices.png" target="_blank">
+      <img src="images/research/california-cap-and-trade/ts-prices.png" alt="Offsets are persistently cheaper than CARB-issued permits.">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" target="_blank">
+      <img src="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" alt="The clustering in the raw data suggests there is some fixed cost to using offsets.">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" target="_blank">
+      <img src="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" alt="There is selection into the offsets market -- firms with the most to gain are more likely to use offsets.">
+    </a>
+  </figure>
 </div>
 
+Draft available upon request
 
-**Draft available upon request**
+#### ***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***
+<div id="content" class="papers">
+  <figure style="width:100%">
+    <a href="images/research/nps-flrea/rev_ratio-group.png" target="_blank">
+      <img src="images/research/nps-flrea/rev_ratio-group.png" alt="Larger parks are more dependent on fee revenue">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/nps-flrea/synth-controls.png" target="_blank">
+      <img src="images/research/nps-flrea/synth-controls.png" alt="Synthetic controls show dramatic decrease in central apporpriations per visitor after FLREA">
+    </a>
+  </figure>
+</div>
+
+Draft available upon request
 
 #### ***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with [Sasha Naumenko](https://www.linkedin.com/in/avn-econ), [Roger von Haefen](https://rvhaefen.wordpress.ncsu.edu/), and [Colton Leach](https://www.linkedin.com/in/colton-leach-54a080136/))
-**Draft available upon request**
+
+<div id="content" class="papers">
+  <figure style="width:100%">
+    <a href="images/research/fishing-spatio-temporal/origins2016.png" target="_blank">
+      <img src="images/research/fishing-spatio-temporal/origins2016.png" alt="Origins of anglers in 2016 sample">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/fishing-spatio-temporal/map2.png" target="_blank">
+      <img src="images/research/fishing-spatio-temporal/map2.png" alt="Over 1,500 sites along the East Coast and Gulf of Mexico">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/fishing-spatio-temporal/RecessionVOT.png" target="_blank">
+      <img src="images/research/fishing-spatio-temporal/RecessionVOT.png" alt="Variation in trip valuation can be absorbed if using only fixed effects">
+    </a>
+  </figure>
+</div>
+
+Draft available upon request
