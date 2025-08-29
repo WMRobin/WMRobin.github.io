@@ -7,28 +7,27 @@ pagetitle: "CV | Willard Robinson"
   .section h2,
   .section h3,
   .section h4,
-  .section h5 {
-      /* <!-- padding-top: 1.5em; --> */
-      /* margin-bottom: 0.75em; */
+  .section h5,
+  .section h6 {
+    color: #2f4858;
   }
 
-  p {
-    font-size: 18px;
-  }
-
+  p,
+  ul,
   li {
     font-size: 18px;
+      color: #2f4858;
   }
-</style>
-<!-- <style>
-    .section h4 {
-        color: #ae3910;
+
+  a {
+        color: #604479;
+        font-weight: 500;
     }
-</style> -->
+</style>
 
 <a href="cv/robinson-cv.pdf" target="_blank">Click for PDF version</a>.
 
-#### Education
+### Education
 
 **Ph.D. Economics**, North Carolina State University, 2027 (expected)
 
@@ -36,14 +35,14 @@ pagetitle: "CV | Willard Robinson"
 
 **B.A. Economics** (Mathematics minor, *summa cum laude*), Appalachian State University, 2020
 
-#### Teaching experience
+### Teaching experience
 
-##### Instructor
+#### Instructor
 * **ARE 336** (Undergraduate): Introduction to Environmental and Resource Economics (NCSU)
   * Fall 2025
 * **ECNS 202** (Undergraduate): Principles of Macroeconomics (MSU)
 
-##### Graduate teaching assistant
+#### Graduate teaching assistant
 * **ECG 715** (Ph.D.): Environmental and Resource Economics I (NCSU)
   * Fall 2024
 * **ECG 702** (Ph.D.): Microeconomic Theory II (NCSU)
@@ -55,7 +54,7 @@ pagetitle: "CV | Willard Robinson"
 * **ECNS 202** (Undergraduate): Principles of Macroeconomics (MSU)
   * Summer 2021, Summer 2022
 
-#### Research experience
+### Research experience
 
 * CEnREP graduate student affilitate: Jun. 2023 to present
 * Research assistant with <a href="https://sites.google.com/site/umutdur/" target="_blank">Umut Dur</a>: Jan. 2025 to present

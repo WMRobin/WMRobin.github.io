@@ -1,13 +1,46 @@
 ---
-title: "Teaching"
+title: ""
 pagetitle: "Teaching | Willard Robinson"
 ---
+
+<style>
+    .section h3 {
+        font-weight: bold;
+        color: #aa2847;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    .section h4 {
+        font-size: 24px;
+        font-weight: underline;
+        margin-bottom: 0.5em;
+    }
+
+    .section h5 {
+        font-size: 20px;
+        text-indent: 1em;
+    }
+
+  p {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  ul {
+    list-style-position: inside;
+  }
+</style>
 
 ### ARE 336: Introduction to Environmental and Resource Economics
 
 #### Problem sets
 
-Fall 2025
+##### Fall 2025
+
 <ul>
     <li>
     <a href="teaching/are-336/problem-sets/fall-2025/ps-1.pdf" target="_blank">Problem set 1</a>

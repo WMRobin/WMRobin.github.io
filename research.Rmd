@@ -5,10 +5,7 @@ pagetitle: "Research | Willard Robinson"
 
 <style>
     .section h4 {
-        color: #ae3910;
-    }
-    a {
-        color: #394a6f
+        color: #604479
     }
 </style>
 

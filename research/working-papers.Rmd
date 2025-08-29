@@ -31,7 +31,7 @@ figcaption {
 }
 
 .h4 {
-  padding-top: 10em;
+  margin-top: 5em;
 }
 </style>
 
@@ -55,7 +55,7 @@ figcaption {
   </figure>
 </div>
 
-**Draft available upon request**
+Draft available upon request
 
 #### ***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***
 <div id="content" class="papers">
@@ -71,7 +71,7 @@ figcaption {
   </figure>
 </div>
 
-**Draft available upon request**
+Draft available upon request
 
 #### ***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with [Sasha Naumenko](https://www.linkedin.com/in/avn-econ), [Roger von Haefen](https://rvhaefen.wordpress.ncsu.edu/), and [Colton Leach](https://www.linkedin.com/in/colton-leach-54a080136/))
 
@@ -93,4 +93,4 @@ figcaption {
   </figure>
 </div>
 
-**Draft available upon request**
+Draft available upon request
