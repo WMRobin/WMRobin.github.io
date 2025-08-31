@@ -1,3 +1,19 @@
+# ============================================================================ #
+# SET PARAMETERS ============================================================= #
+# ============================================================================ #
+
+# set your directories
+indir = "./";  # this director holds the input CSV file
+outdir = "./"; # this is where the allocation file will be saved
+
+# name of csv file
+# filename = "example-preferences.csv";
+filename = "example-preferences2.csv";
+
+# ============================================================================ #
+# YOU ARE NOT REQUIRED TO EDIT ANYTHING BELOW THIS LINE ====================== #
+# ============================================================================ #
+
 using CSV
 using DataFrames
 import Combinatorics
@@ -6,17 +22,6 @@ import Random
 # Set the seed for reproducibility
 Random.seed!(42);
 
-# set your directories
-indir = "./";
-outdir = "./";
-
-# name of csv file
-filename = "example-preferences.csv";
-
-# ===================================== #
-# =============== SETUP =============== #
-# ===================================== #
-
 # read data
 prefs = CSV.read(indir * filename, DataFrame);
 
@@ -24,17 +29,50 @@ prefs = CSV.read(indir * filename, DataFrame);
 individuals = collect(names(prefs));
 
 # convert data to dictionary
-preferences = Dict{String, Vector{String}}();
+preferences = Dict{String,Vector{String}}();
 objects = Set();
-for i in 1:size(prefs,2)
-    preferences[names(prefs)[i]] = collect(prefs[!,i])
+for i in 1:size(prefs, 2)
+    preferences[names(prefs)[i]] = collect(prefs[!, i])
     objects = union(objects, Set(preferences[names(prefs)[i]]))
 end
-objects = collect(objects);
+objects = sort(collect(objects));
 
-# ========================================= #
-# =============== FUNCTIONS =============== #
-# ========================================= #
+# ============================================================================ #
+# DESCRIPTIVES =============================================================== #
+# ============================================================================ #
+
+i = 1
+preferences[individuals[i]]
+objects
+
+current_prefs = preferences[individuals[i]]
+argmin(current_prefs == "a")
+argmin(current_prefs == "b")
+argmin(current_prefs == "c")
+
+# initialize ranking matrix
+ranks = zeros(Int, length(objects), length(objects))
+
+# loop through data, counting each time object j is given rank k
+for i in 1:length(individuals)
+    current_prefs = preferences[individuals[i]]
+    for j in 1:length(objects)
+        rank_j = findfirst(x -> x .== objects[j], current_prefs)
+        ranks[rank_j, j] += 1
+    end
+end
+
+# format for saving as CSV
+ranks_df = DataFrame(ranks, objects)
+ranks_df[!, :rank] = 1:length(objects)
+select!(ranks_df, :rank, :)
+
+# save this as CSV
+CSV.write(outdir * "rank-counts.csv", ranks_df);
+
+# ============================================================================ #
+# FUNCTIONS ================================================================== #
+# ============================================================================ #
 
 function serial_dictator(preferences, objects, order, surplus_people)
     allocation = Dict()
@@ -50,18 +88,18 @@ function serial_dictator(preferences, objects, order, surplus_people)
                 allocation[ind] = preferred_good
                 println("Individual $ind gets good $preferred_good")
                 delete!(unused_goods, preferred_good)
-                
+
                 if preferred_good in used_goods
                     multi_count += 1
                 end
-                
+
                 push!(used_goods, preferred_good)
-                
+
                 # once we have allocated to all surplus people, we can allocate the rest of the goods
                 if multi_count >= surplus_people
                     available_goods = unused_goods
                 end
-                
+
                 break
             end
         end
@@ -79,9 +117,9 @@ function calculate_payoffs(allocation, preferences, max_payoff)
     return v
 end
 
-# =================================================== #
-# =============== SERIAL DICTATORSHIP =============== #
-# =================================================== #
+# ============================================================================ #
+# SERIAL DICTATOR ALGORITHM ================================================== #
+# ============================================================================ #
 
 # how many more people are there than objects?
 surplus_people = length(individuals) - length(objects);
