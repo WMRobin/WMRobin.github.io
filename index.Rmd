@@ -38,7 +38,7 @@ pagetitle: "Home | Willard Robinson"
 </style>
 
 <figure style= "max-width: 33%;" margin = "20">
-  <img src="images/robinson-headshot.jpg">
+  <img src="images/robinson-headshot.jpg" alt="Willard Robinson headshot">
 </figure>
 
 <br>
