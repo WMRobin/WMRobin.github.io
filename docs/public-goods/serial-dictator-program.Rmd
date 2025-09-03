@@ -83,6 +83,8 @@ The program goes through all permutations of dictatorship orders to find the one
 Note that the program can handle a larger number of individuals than objects, but it cannot allocate more objects than there are people.
 This is mainly because everybody who submitted a paper for review was required to be a reviewer, so there was by design always at least as many reviewers as there were papers.
 
+Another peculiarity about this program is that everybody must rank every object. In many cases, a person may deem only a small number of objects better than nothing. Because my peer review group required everyone participating to review a paper, everybody submitted a complete ranking.
+
 I find it interesting to see how "popular" the papers were, so the program saves a histogram table as a CSV.
 This table is called <code>rank-counts.csv</code>.
 The main allocation is saved in <code>serial-dictator-allocation.csv</code> and can be easily opened in Excel or Google Sheets.
