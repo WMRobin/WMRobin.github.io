@@ -44,7 +44,6 @@ pagetitle: "Teaching | Willard Robinson"
 <ul>
     <li>
     <a href="teaching/are-336/problem-sets/fall-2025/ps-1.pdf" target="_blank">Problem set 1</a>
-    <!-- -- <a href="teaching/are-336/problem-sets/fall-2025/ps-1-solution.pdf" target="_blank">Solutions</a> -->
-    -- Solutions (posted after 09/05/2025)
+    -- <a href="teaching/are-336/problem-sets/fall-2025/ps-1-solution.pdf" target="_blank">Solutions</a>
     </li>
 </ul>
