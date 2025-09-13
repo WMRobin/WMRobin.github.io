@@ -35,7 +35,9 @@ figcaption {
 }
 </style>
 
-#### ***Adoption Costs for Offsets: Evidence from California***
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Adoption Costs for Offsets: Evidence from California***</h4>
+</div>
 
 <div id="content" class="papers">
   <figure style="width:100%">
@@ -57,23 +59,28 @@ figcaption {
 
 Draft available upon request
 
-#### ***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
+</div>
+
 <div id="content" class="papers">
-  <figure style="width:100%">
-    <a href="images/research/nps-flrea/rev_ratio-group.png" target="_blank">
-      <img src="images/research/nps-flrea/rev_ratio-group.png" alt="Larger parks are more dependent on fee revenue">
-    </a>
-  </figure>
-  <figure style="width:100%">
-    <a href="images/research/nps-flrea/synth-controls.png" target="_blank">
-      <img src="images/research/nps-flrea/synth-controls.png" alt="Synthetic controls show dramatic decrease in central apporpriations per visitor after FLREA">
-    </a>
-  </figure>
+ <figure style="width:100%">
+  <a href="images/research/nps-flrea/rev_ratio-group.png" target="_blank">
+   <img src="images/research/nps-flrea/rev_ratio-group.png" alt="Larger parks are more dependent on fee revenue">
+  </a>
+ </figure>
+ <figure style="width:100%">
+   <a href="images/research/nps-flrea/synth-controls.png" target="_blank">
+     <img src="images/research/nps-flrea/synth-controls.png" alt="Synthetic controls show dramatic decrease in central apporpriations per visitor after FLREA">
+   </a>
+ </figure>
 </div>
 
 Draft available upon request
 
-#### ***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with <a href="https://www.linkedin.com/in/avn-econ" target="_blank">Sasha Naumenko</a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank">Roger von Haefen</a>, and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank">Colton Leach</a>)
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with <a href="https://www.linkedin.com/in/avn-econ" target="_blank"><span itemprop="author">Sasha Naumenko</span></a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Roger von Haefen</span></a>, and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
+</div>
 
 <div id="content" class="papers">
   <figure style="width:100%">

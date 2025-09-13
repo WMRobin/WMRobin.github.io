@@ -2,12 +2,22 @@
 title: 'Works in progress'
 ---
 
-#### ***Alternative Financing for America's National Parks: An application of weak complementarity***
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Alternative Financing for America's National Parks: An application of weak complementarity***</h4>
+</div>
 
-#### ***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank">Spencer Banzhaf</a>)
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Spencer Banzhaf</span></a>)</h4>
+</div>
 
-#### ***Recreation Welfare Effects with Climate Change-Induced Migration***
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Recreation Welfare Effects with Climate Change-Induced Migration***</h4>
+</div>
 
-#### ***Centralized Major Selection Procedures*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank">Umut Dur</a>)
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Centralized Major Selection Procedures*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
+</div>
 
-#### ***Using Matching Theory to Improve University Transfer Processes*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank">Umut Dur</a> and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank">Colton Leach</a>)
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4>***Using Matching Theory to Improve University Transfer Processes*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a> and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
+</div>
