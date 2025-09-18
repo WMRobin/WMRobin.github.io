@@ -1,42 +1,93 @@
 ---
-title: 'Working papers'
+title: "Working papers"
 ---
 
-<style>
-    figure {
-  display: table;
-  width: 50%;
-  margin:0;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Working papers",
+  "itemListElement": [
+    {
+      "@type": "CreativeWork",
+      "position": 1,
+      "headline": "Adoption Costs for Offsets: Evidence from California",
+      "author": {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      "dateCreated": "2025-09-18",
+      "abstract": "Working paper identifying and measuring fixed costs to adopting offsets in a cap-and-trade regime.",
+      "url": "https://wmrobin.github.io/research.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 2,
+      "headline": "Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act",
+      "author": {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      "dateCreated": "2025-09-18",
+      "abstract": "Working paper that empirically tests for crowding out of federal appropriations in the National Park System following the 2004 Federal Lands Recreation Enhancement Act.",
+      "url": "https://wmrobin.github.io/research.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 3,
+      "headline": "The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach",
+      "author": [
+      {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Roger von Haefen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Colton Leach",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Sasha Naumenko",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Visa Corporation"
+        }
+      }
+    ],
+      "dateCreated": "2025-09-18",
+      "abstract": "",
+      "url": "https://wmrobin.github.io/research.html"
+    }
+  ]
 }
-
-figcaption {
-  display: table-caption;
-  caption-side: top;
-}
-
-#content {
-  max-width: 80%;
-  height: 80%;
-}
-
-.papers {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  text-align: center;
-  /* overflow: scroll; */
-}
-
-.h4 {
-  margin-top: 5em;
-}
-</style>
+</script>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Adoption Costs for Offsets: Evidence from California***</h4>
+ <h4 class="research-paper">***Adoption Costs for Offsets: Evidence from California***</h4>
 </div>
 
 <div id="content" class="papers">
@@ -46,13 +97,13 @@ figcaption {
     </a>
   </figure>
   <figure style="width:100%">
-    <a href="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" target="_blank">
-      <img src="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" alt="The clustering in the raw data suggests there is some fixed cost to using offsets.">
+    <a href="images/research/california-cap-and-trade/offsets-obligation-cr-cp13.png" target="_blank">
+      <img src="images/research/california-cap-and-trade/offsets-obligation-cr-cp13.png" alt="The clustering in the raw data suggests a tangible adoption cost to using offsets.">
     </a>
   </figure>
   <figure style="width:100%">
-    <a href="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" target="_blank">
-      <img src="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" alt="There is selection into the offsets market -- firms with the most to gain are more likely to use offsets.">
+    <a href="images/research/california-cap-and-trade/cdf-potential-gains.png" target="_blank">
+      <img src="images/research/california-cap-and-trade/cdf-potential-gains.png" alt="There is selection into the offsets market -- firms with the most to gain are more likely to use offsets.">
     </a>
   </figure>
 </div>
@@ -60,7 +111,7 @@ figcaption {
 Draft available upon request
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
+ <h4 class="research-paper">***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
 </div>
 
 <div id="content" class="papers">
@@ -79,7 +130,7 @@ Draft available upon request
 Draft available upon request
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with <a href="https://www.linkedin.com/in/avn-econ" target="_blank"><span itemprop="author">Sasha Naumenko</span></a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Roger von Haefen</span></a>, and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
+ <h4 class="research-paper">***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with <a href="https://www.linkedin.com/in/avn-econ" target="_blank"><span itemprop="author">Sasha Naumenko</span></a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Roger von Haefen</span></a>, and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
 </div>
 
 <div id="content" class="papers">

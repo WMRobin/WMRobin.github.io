@@ -3,17 +3,14 @@ title: "Research"
 pagetitle: "Research | Willard Robinson"
 ---
 
-<style>
-    .section h4 {
-        color: #604479
-    }
-</style>
-
+<br>
 
 ## Working papers
 
 ```{r, research-working-papers, child = "research/working-papers.Rmd"}
 ```
+
+<br>
 
 ## Works in progress
 

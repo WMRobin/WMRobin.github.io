@@ -3,21 +3,21 @@ title: 'Works in progress'
 ---
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Alternative Financing for America's National Parks: An application of weak complementarity***</h4>
+ <h4 class="research-paper">***Alternative Financing for America's National Parks: An application of weak complementarity***</h4>
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Spencer Banzhaf</span></a>)</h4>
+ <h4 class="research-paper">***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Spencer Banzhaf</span></a>)</h4>
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Recreation Welfare Effects with Climate Change-Induced Migration***</h4>
+ <h4 class="research-paper">***Recreation Welfare Effects with Climate Change-Induced Migration***</h4>
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Centralized Major Selection Procedures*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
+ <h4 class="research-paper">***Centralized Major Selection Procedures*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4>***Using Matching Theory to Improve University Transfer Processes*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a> and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
+ <h4 class="research-paper">***Using Matching Theory to Improve University Transfer Processes*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a> and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
 </div>

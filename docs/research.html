@@ -35,48 +35,63 @@
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5B8VD5SK');
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      "gtm.start": new Date().getTime(),
+      event: "gtm.js",
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-5B8VD5SK");
 </script>
 <!-- End Google Tag Manager -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PMMY7LYYMC"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-PMMY7LYYMC"
+></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-    gtag('config', 'G-PMMY7LYYMC');
+  gtag("config", "G-PMMY7LYYMC");
 </script>
 
 <!-- Metadata -->
 <script type="application/ld+json">
-{
+  {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Willard Robinson's personal website",
     "url": "https://wmrobin.github.io/"
-}
+  }
 </script>
 
-<meta charset="UTF-8">
-<meta name="description"
-    content="Will Robinson is a fourth year Ph.D. student in the Economics department at North Carolina State University (NCSU).">
-<meta name="keywords" content="North Carolina State University, Environmental Economics, cap and trade, national parks">
-<meta name="author" content="Willard Robinson">
+<meta charset="UTF-8" />
+<meta
+  name="description"
+  content="Will Robinson is a fourth year Ph.D. student in the Economics department at North Carolina State University (NCSU)."
+/>
+<meta
+  name="keywords"
+  content="North Carolina State University, Environmental Economics, cap and trade, national parks"
+/>
+<meta name="author" content="Willard Robinson" />
 
+<link rel="shortcut icon" href="images/icons/circle-user-solid.svg" />
+<link rel="icon" href="imagees/icons/circle-user-solid.svg" />
 
-<link rel="shortcut icon" href="images/icons/circle-user-solid.svg">
-<link rel="icon" href="imagees/icons/circle-user-solid.svg">
-
-<title>{{ pagetitle }}</title>
+<!-- <title>{{ pagetitle }}</title> -->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -357,47 +372,94 @@ $(document).ready(function () {
 </div>
 
 
-<style>
-    .section h4 {
-        color: #604479
-    }
-</style>
+<p><br></p>
 <div id="working-papers" class="section level2">
 <h2>Working papers</h2>
-<style>
-    figure {
-  display: table;
-  width: 50%;
-  margin:0;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Working papers",
+  "itemListElement": [
+    {
+      "@type": "CreativeWork",
+      "position": 1,
+      "headline": "Adoption Costs for Offsets: Evidence from California",
+      "author": {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      "dateCreated": "2025-09-18",
+      "abstract": "Working paper identifying and measuring fixed costs to adopting offsets in a cap-and-trade regime.",
+      "url": "https://wmrobin.github.io/research.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 2,
+      "headline": "Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act",
+      "author": {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      "dateCreated": "2025-09-18",
+      "abstract": "Working paper that empirically tests for crowding out of federal appropriations in the National Park System following the 2004 Federal Lands Recreation Enhancement Act.",
+      "url": "https://wmrobin.github.io/research.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 3,
+      "headline": "The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach",
+      "author": [
+      {
+        "@type": "Person",
+        "name": "Willard Robinson",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Roger von Haefen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Colton Leach",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "North Carolina State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Sasha Naumenko",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Visa Corporation"
+        }
+      }
+    ],
+      "dateCreated": "2025-09-18",
+      "abstract": "",
+      "url": "https://wmrobin.github.io/research.html"
+    }
+  ]
 }
-
-figcaption {
-  display: table-caption;
-  caption-side: top;
-}
-
-#content {
-  max-width: 80%;
-  height: 80%;
-}
-
-.papers {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  text-align: center;
-  /* overflow: scroll; */
-}
-
-.h4 {
-  margin-top: 5em;
-}
-</style>
+</script>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Adoption Costs for Offsets: Evidence from
 California</em></strong>
 </h4>
@@ -409,19 +471,19 @@ California</em></strong>
 </a>
 </figure>
 <figure style="width:100%">
-<a href="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" target="_blank">
-<img src="images/research/california-cap-and-trade/offsets-obligation-cr-offsetcap8.png" alt="The clustering in the raw data suggests there is some fixed cost to using offsets.">
+<a href="images/research/california-cap-and-trade/offsets-obligation-cr-cp13.png" target="_blank">
+<img src="images/research/california-cap-and-trade/offsets-obligation-cr-cp13.png" alt="The clustering in the raw data suggests a tangible adoption cost to using offsets.">
 </a>
 </figure>
 <figure style="width:100%">
-<a href="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" target="_blank">
-<img src="images/research/california-cap-and-trade/cdf-potential-gains-cp13.png" alt="There is selection into the offsets market -- firms with the most to gain are more likely to use offsets.">
+<a href="images/research/california-cap-and-trade/cdf-potential-gains.png" target="_blank">
+<img src="images/research/california-cap-and-trade/cdf-potential-gains.png" alt="There is selection into the offsets market -- firms with the most to gain are more likely to use offsets.">
 </a>
 </figure>
 </div>
 <p>Draft available upon request</p>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Impacts of Centralized Budget Policy on National Parks: An
 analysis of the Federal Land Recreation Enhancement Act</em></strong>
 </h4>
@@ -440,7 +502,7 @@ analysis of the Federal Land Recreation Enhancement Act</em></strong>
 </div>
 <p>Draft available upon request</p>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>The Value of Shoreline Recreational Fishing Across Time and
 Space: An internal meta-regression approach</em></strong> (with
 <a href="https://www.linkedin.com/in/avn-econ" target="_blank"><span
@@ -469,17 +531,18 @@ itemprop="author">Colton Leach</span></a>)
 </figure>
 </div>
 <p>Draft available upon request</p>
+<p><br></p>
 </div>
 <div id="works-in-progress" class="section level2">
 <h2>Works in progress</h2>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Alternative Financing for America’s National Parks: An
 application of weak complementarity</em></strong>
 </h4>
 </div>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Additionality in the Market for Environmental
 Services</em></strong> (with
 <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span
@@ -487,20 +550,20 @@ itemprop="author">Spencer Banzhaf</span></a>)
 </h4>
 </div>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Recreation Welfare Effects with Climate Change-Induced
 Migration</em></strong>
 </h4>
 </div>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Centralized Major Selection Procedures</em></strong> (with
 <a href="https://sites.google.com/site/umutdur/" target="_blank"><span
 itemprop="author">Umut Dur</span></a>)
 </h4>
 </div>
 <div itemscope="" itemtype="https://schema.org/ScholarlyArticle">
-<h4>
+<h4 class="research-paper">
 <strong><em>Using Matching Theory to Improve University Transfer
 Processes</em></strong> (with
 <a href="https://sites.google.com/site/umutdur/" target="_blank"><span
