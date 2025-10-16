@@ -51,3 +51,14 @@ pagetitle: "Teaching | Willard Robinson"
     -- <a href="teaching/are-336/problem-sets/fall-2025/ps-2-solutions.pdf" target="_blank">Solutions</a>
     </li>
 </ul>
+
+#### Exams
+
+##### Fall 2025
+
+<ul>
+  <li>
+    <a href="teaching/are-336/problem-sets/fall-2025/midterm.pdf" target="_blank">Midterm</a>
+    -- <a href="teaching/are-336/problem-sets/fall-2025/midterm-solutions.pdf" target="_blank">Solutions</a>
+  </li>
+</ul>
