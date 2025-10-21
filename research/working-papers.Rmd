@@ -108,7 +108,7 @@ title: "Working papers"
   </figure>
 </div>
 
-Draft available upon request
+<strong><a href="research/papers/robinson-california-cap-and-trade.pdf" target = "_blank">Download draft here</a></strong>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
  <h4 class="research-paper">***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
