@@ -50,6 +50,10 @@ pagetitle: "Teaching | Willard Robinson"
     <a href="teaching/are-336/problem-sets/fall-2025/ps-2.pdf" target="_blank">Problem set 2</a>
     -- <a href="teaching/are-336/problem-sets/fall-2025/ps-2-solutions.pdf" target="_blank">Solutions</a>
     </li>
+    <li>
+    <a href="teaching/are-336/problem-sets/fall-2025/ps-3.pdf" target="_blank">Problem set 3</a>
+    -- Solutions (after 11/07)
+    </li>
 </ul>
 
 #### Exams
