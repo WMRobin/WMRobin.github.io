@@ -7,7 +7,7 @@ title: 'Works in progress'
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4 class="research-paper">***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Spencer Banzhaf</span></a>)</h4>
+ <h4 class="research-paper">***Additionality in the Market for Environmental Services*** (with <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Spencer Banzhaf</span></a> and <a href="https://cnr.ncsu.edu/directory/erin-o-sills/" target="_blank"><span itemprop="author">Erin Sills</span></a>)</h4>
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
