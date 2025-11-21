@@ -108,7 +108,7 @@ title: "Working papers"
   </figure>
 </div>
 
-<strong><a href="research/papers/robinson-california-cap-and-trade.pdf" target = "_blank">Download draft here</a></strong>
+Out for review: <strong><a href="research/papers/robinson-california-cap-and-trade.pdf" target = "_blank">Download draft here</a></strong>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
  <h4 class="research-paper">***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
@@ -151,4 +151,4 @@ Draft available upon request
   </figure>
 </div>
 
-<em>Accepted, <strong>Marine Resource Economics</strong><em>
+<em>Accepted, <strong><a href="https://www.journals.uchicago.edu/toc/mre/current" target="_blank">Marine Resource Economics</a></strong><em>
