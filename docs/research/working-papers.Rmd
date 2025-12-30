@@ -152,3 +152,21 @@ Draft available upon request
 </div>
 
 <em>Accepted, <strong><a href="https://www.journals.uchicago.edu/toc/mre/current" target="_blank">Marine Resource Economics</a></strong><em>
+
+
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4 class="research-paper">***Stability in Centralized College Major Assignment: Evidence from Engineering at NC State University*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
+</div>
+
+<div id="content" class="papers">
+  <figure style="width:100%">
+    <a href="images/research/ncsu-coda/gpa-majors.png" target="_blank">
+      <img src="images/research/ncsu-coda/gpa-majors.png" alt="Preference formation based on student GPA and historical averages">
+    </a>
+  </figure>
+  <figure style="width:100%">
+    <a href="images/research/ncsu-coda/makeup-accepted-students.png" target="_blank">
+      <img src="images/research/ncsu-coda/makeup-accepted-students.png" alt="Students are very likely to be assigned their top choice">
+    </a>
+  </figure>
+</div>

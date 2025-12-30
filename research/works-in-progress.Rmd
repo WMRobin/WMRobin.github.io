@@ -15,9 +15,5 @@ title: 'Works in progress'
 </div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4 class="research-paper">***Stability in Centralized College Major Assignment: Evidence from Engineering at NC State University*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
-</div>
-
-<div itemscope itemtype="https://schema.org/ScholarlyArticle">
  <h4 class="research-paper">***Using Matching Theory to Improve University Transfer Processes*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a> and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
 </div>
