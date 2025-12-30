@@ -1,4 +1,4 @@
-name: "Willard Robinson's website"
+name: "Willard Robinson"
 output_dir: docs
 navbar:
   title: "Willard Robinson"
@@ -30,5 +30,4 @@ output:
     theme: united
     css: style.css
     includes:
-      in_header:
-        "header.html"
+      in_header: "header.html"
