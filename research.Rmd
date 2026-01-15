@@ -3,10 +3,7 @@ title: "Research"
 pagetitle: "Research | Willard Robinson"
 ---
 
-<br>
-
 ## Working papers
-
 ```{r, research-working-papers, child = "research/working-papers.Rmd"}
 ```
 
