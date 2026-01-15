@@ -44,13 +44,22 @@ li {
 }
 
 a {
-  color: #604479;
+  color: #dd3414;
   font-weight: 500;
 }
 
 a:hover {
-  color: #8c356b;
+  color: #882c0c;
 }
+
+/* a {
+  color: #604479;
+  font-weight: 500;
+} */
+
+/* a:hover {
+  color: #8c356b;
+} */
 
 h4.research-paper {
   padding-left: 8px;
