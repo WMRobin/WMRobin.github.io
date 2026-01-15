@@ -2,6 +2,24 @@
 title: "Working papers"
 ---
 
+<style>
+/* a {
+  color: #604479;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #8c356b;
+} */
+
+.section h2 {
+  color: #882c0c;
+}
+.section h4 {
+  color: #331105;
+}
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,8 +105,10 @@ title: "Working papers"
 </script>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4 class="research-paper">***Adoption Costs for Offsets: Evidence from California***</h4>
+ <h4 class="research-paper">***Transaction Costs for Offsets: Evidence from California***</h4>
 </div>
+
+<strong><a href="research/papers/robinson-california-cap-and-trade.pdf" target = "_blank">Download draft here</a></strong>
 
 <div id="content" class="papers">
   <figure style="width:100%">
@@ -108,30 +128,12 @@ title: "Working papers"
   </figure>
 </div>
 
-Out for review: <strong><a href="research/papers/robinson-california-cap-and-trade.pdf" target = "_blank">Download draft here</a></strong>
-
-<div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4 class="research-paper">***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
-</div>
-
-<div id="content" class="papers">
- <figure style="width:100%">
-  <a href="images/research/nps-flrea/rev_ratio-group.png" target="_blank">
-   <img src="images/research/nps-flrea/rev_ratio-group.png" alt="Larger parks are more dependent on fee revenue">
-  </a>
- </figure>
- <figure style="width:100%">
-   <a href="images/research/nps-flrea/synth-controls.png" target="_blank">
-     <img src="images/research/nps-flrea/synth-controls.png" alt="Synthetic controls show dramatic decrease in central apporpriations per visitor after FLREA">
-   </a>
- </figure>
-</div>
-
-Draft available upon request
-
+<br>
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
  <h4 class="research-paper">***The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach*** (with <a href="https://www.linkedin.com/in/avn-econ" target="_blank"><span itemprop="author">Sasha Naumenko</span></a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank"><span itemprop="author">Roger von Haefen</span></a>, and <a href="https://www.linkedin.com/in/colton-leach-54a080136/" target="_blank"><span itemprop="author">Colton Leach</span></a>)</h4>
 </div>
+
+<em>Accepted, <strong><a href="https://www.journals.uchicago.edu/toc/mre/current" target="_blank">Marine Resource Economics</a></strong><em>
 
 <div id="content" class="papers">
   <figure style="width:100%">
@@ -151,11 +153,28 @@ Draft available upon request
   </figure>
 </div>
 
-<em>Accepted, <strong><a href="https://www.journals.uchicago.edu/toc/mre/current" target="_blank">Marine Resource Economics</a></strong><em>
+<br>
+<div itemscope itemtype="https://schema.org/ScholarlyArticle">
+ <h4 class="research-paper">***Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act***</h4>
+</div>
 
+Draft available upon request
+
+<div id="content" class="papers">
+ <figure style="width:100%">
+  <a href="images/research/nps-flrea/rev_ratio-group.png" target="_blank">
+   <img src="images/research/nps-flrea/rev_ratio-group.png" alt="Larger parks are more dependent on fee revenue">
+  </a>
+ </figure>
+ <figure style="width:100%">
+   <a href="images/research/nps-flrea/synth-controls.png" target="_blank">
+     <img src="images/research/nps-flrea/synth-controls.png" alt="Synthetic controls show dramatic decrease in central apporpriations per visitor after FLREA">
+   </a>
+ </figure>
+</div>
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle">
- <h4 class="research-paper">***Stability in Centralized College Major Assignment: Evidence from Engineering at NC State University*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
+ <h4 class="research-paper">***Stability in Centralized College Major Assignment: Evidence from NCSU Engineering*** (with <a href="https://sites.google.com/site/umutdur/" target="_blank"><span itemprop="author">Umut Dur</span></a>)</h4>
 </div>
 
 <div id="content" class="papers">
