@@ -1,0 +1,38 @@
+title: "Willard Robinson"
+url: "https://wmrobin.github.io"
+
+exclude:
+  - docs/
+  - "*.Rmd"
+  - _site.yml
+  - Gemfile
+  - Gemfile.lock
+  - "*.Rproj"
+  - header.html
+  - style.css
+  - rank-counts.csv
+
+nav_left:
+  - text: "Home"
+    href: "/"
+    icon: "fa-mountain-sun"
+  - text: "Research"
+    href: "/research"
+    icon: "fa-pen"
+  - text: "CV"
+    href: "/cv"
+    icon: "fa-file"
+  - text: "Teaching"
+    href: "/teaching"
+    icon: "fa-book-open-reader"
+  - text: "Public goods"
+    href: "/public-goods"
+    icon: "fa-code"
+
+nav_right:
+  - icon: "fa-solid fa-envelope"
+    href: "mailto:wmrobin3@ncsu.edu"
+  - icon: "fa-brands fa-x-twitter"
+    href: "https://twitter.com/WMRobinEcon"
+  - icon: "fa-brands fa-github"
+    href: "https://github.com/WMRobin"

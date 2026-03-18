@@ -2,6 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+_site/
+Gemfile.lock
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
