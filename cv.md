@@ -1,15 +1,12 @@
 ---
+layout: default
 title: "CV"
 pagetitle: "CV | Willard Robinson"
 ---
 
 <style>
-  .section h2,
-  .section h3,
-  .section h4,
-  .section h5,
-  .section h6 {
-    color: #604479;
+  .section h2:first-of-type {
+    padding-top: 0em;
   }
 
   .section h2 {
@@ -19,21 +16,9 @@ pagetitle: "CV | Willard Robinson"
   .section h3 {
     margin-bottom: -5px;
   }
-
-  p,
-  ul,
-  li {
-    font-size: 18px;
-      color: #2f4858;
-  }
-
-  a {
-        color: #dd3414;
-        font-weight: 500;
-    }
 </style>
 
-Click <a href="cv/robinson-cv.pdf" target="_blank">here</a> for PDF version.
+<a href="/cv/robinson-cv.pdf" target="_blank" class="btn btn-danger mb-3"><i class="fa-solid fa-file-pdf me-2"></i>Download CV (PDF)</a>
 
 ## Education
 

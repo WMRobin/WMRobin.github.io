@@ -1,12 +1,13 @@
 ---
-title: ""
+layout: default
+title: "Teaching"
 pagetitle: "Teaching | Willard Robinson"
 ---
 
 <style>
     .section h3 {
         font-weight: bold;
-        color: #aa2847;
+        color: #CC0000;
         margin-bottom: 0.5em;
         text-align: center;
     }

@@ -1,5 +1,6 @@
 ---
-# title: "Willard Robinson | Economics"
+layout: default
+title: "Willard Robinson"
 pagetitle: "Home | Willard Robinson"
 ---
 <meta name="google-site-verification" content="apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"/>
@@ -13,29 +14,21 @@ pagetitle: "Home | Willard Robinson"
   }
 </script>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8VD5SK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <style>
   figure {
     margin-right: 15px;
     text-align: center;
-    float: left; 
+    float: left;
   }
 
   figure img {
-    /* Maintain aspect ratio */
+    max-width: 100%;
     height: auto;
-    /* Remove any extra space below the image */
     display: block;
   }
-  
+
   /* Style for the caption */
-   
+
   figcaption {
     /* Optional: Add a background color to improve readability */
     /*background-color: rgba(0, 0, 0, 0.7);
@@ -53,8 +46,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 </style>
 
-<figure style= "max-width: 33%;" margin = "20">
-  <img src="images/robinson-headshot.jpg" alt="Willard Robinson headshot">
+<figure style="max-width: 250px;">
+  <img src="/images/robinson-headshot.jpg" alt="Willard Robinson headshot">
 </figure>
 
 <br>

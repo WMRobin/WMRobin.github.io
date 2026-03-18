@@ -1,11 +1,8 @@
 ---
-title: ""
+layout: default
+title: "Public goods"
 pagetitle: "Public goods | Willard Robinson"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 2
+mathjax: true
 ---
 
 On this page, I have listed some "public goods" that I've made.
@@ -13,5 +10,4 @@ The idea is that these are useful/interesting to me, and they may be useful/inte
 
 ## Serial dictator program
 
-```{r child = "public-goods/serial-dictator-program.rmd"}
-```
+{% include serial-dictator.html %}
