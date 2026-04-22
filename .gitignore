@@ -4,6 +4,7 @@
 .Ruserdata
 _site/
 Gemfile.lock
+.claude/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
