@@ -1,6 +1,7 @@
 title: "Willard Robinson"
 url: "https://wmrobin.github.io"
 destination: docs
+keep_files: [".nojekyll"]
 
 exclude:
   - docs/
