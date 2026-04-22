@@ -1,5 +1,6 @@
 title: "Willard Robinson"
 url: "https://wmrobin.github.io"
+destination: docs
 
 exclude:
   - docs/
