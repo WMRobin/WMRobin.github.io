@@ -2,8 +2,8 @@
 layout: default
 title: "Willard Robinson"
 pagetitle: "Home | Willard Robinson"
+google_site_verification: "apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"
 ---
-<meta name="google-site-verification" content="apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"/>
 
 <script type="application/ld+json">
   {
