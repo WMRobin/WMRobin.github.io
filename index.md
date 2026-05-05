@@ -52,10 +52,6 @@ google_site_verification: "apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"
 
 <br>
 
-Welcome to my site!
+I am an economist doing research at the intersection of market design and the environment. My research portfolio covers a broad area at this intersection, but the central theme is assessing and designing market-based solutions to public goods underprovision. My interests cover the spectrum of theory and empirics; I have ongoing projects on voluntary conservation markets, national parks financing, matching theory, and recreation demand estimation. My job market paper studies conservation markets which face dual issues of asymmetric information and costly participation. I find that the costly participation can create socially harmful markets---even with optimal policies---but these same participation costs can be used as a screening mechanism to minimize the negative effects of information asymmetry.
 
-My name is Willard (Will) Robinson.
-I'm a fourth-year Economics Ph.D. student at North Carolina State University and a Center for Environmental and Resource Economic Policy (<a href="https://cenrep.ncsu.edu/" target="_blank">CEnREP</a>) affiliate.
-In the summer of 2025, I was a graduate fellow at the Property and Environment Research Center (<a href="https://perc.org/" target="_blank">PERC</a>) in beautiful Bozeman, MT.
-
-My research interests lie at the intersection of market design and the environment. For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
+I am a Ph.D. student in the Economics department at North Carolina State University and a Center for Environmental and Resource Economic Policy (<a href="https://cenrep.ncsu.edu/" target="_blank">CEnREP</a>) affiliate. In the summer of 2025, I was a graduate fellow at the Property and Environment Research Center (<a href="https://perc.org/" target="_blank">PERC</a>) in beautiful Bozeman, MT. For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
