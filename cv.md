@@ -6,15 +6,24 @@ pagetitle: "CV | Willard Robinson"
 
 <style>
   .section h2:first-of-type {
-    padding-top: 0em;
+    padding-top: 0;
   }
 
   .section h2 {
-    margin-bottom: -2.5px;
+    margin: 0;
   }
 
-  .section h3 {
-    margin-bottom: -5px;
+  .section h4 {
+    margin: 0;
+  }
+
+  .btn {
+    background-color: #327d32;
+    border-color: #1d4b1f;
+  }
+  .btn:hover {
+    background-color: #1d4b1f;
+    border-color: #1d4b1f;
   }
 </style>
 
@@ -31,13 +40,14 @@ pagetitle: "CV | Willard Robinson"
 ## Teaching experience
 <font size="3">(*U.* = Undergraduate course *Ph.D.* = Doctorate course)</font>
 
-### Instructor
+#### Instructor
+
 * **ARE 336** (*U.*): Introduction to Environmental and Resource Economics (NCSU)
   * Fall 2025
 * **ECNS 202** (*U.*): Principles of Macroeconomics (MSU)
   * Fall 2021, Spring 2022
 
-### Graduate teaching assistant
+#### Graduate teaching assistant
 * **ARE 336** (*U.*): Environmental and Resource Economics (NCSU)
   * Fall 2023, Spring 2025
 * **ECG 702** (*Ph.D.*): Microeconomic Theory II (NCSU)
