@@ -33,17 +33,19 @@ li {
 }
 
 a {
-  color: #CC0000;
+  color: #1d4b1f;
+  /* color: #CC0000; */
   font-weight: 500;
 }
 
 a:hover {
-  color: #990000;
+  color: #327d32;
+  /* color: #990000; */
 }
 
 h4.research-paper {
   padding-left: 8px;
-  color: #CC0000;
+  /* color: #CC0000; */
 }
 
 figure {
