@@ -58,6 +58,12 @@ urlcolor=primaryColor
 % \usepackage{fontspec}
 % \setmainfont{QTAgateType}
 
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhf{} % Clear existing headers/footers
+% \fancyhead[R]{\textit{Last updated: \today}} % Puts date in top right corner
+% \renewcommand{\headrulewidth}{0pt} % Removes the line under the header
+
 \usepackage{charter}
 
 % Some settings:
@@ -171,7 +177,10 @@ urlcolor=primaryColor
 \sbox\ANDbox{$|$}
 
 \begin{document}
-\vspace{-5ex}
+
+\hfill \textit{\footnotesize last updated: \today}
+
+\vspace{-3.9ex}
 
 \begin{header}
 	\fontsize{15 pt}{15 pt}\selectfont Willard Robinson
