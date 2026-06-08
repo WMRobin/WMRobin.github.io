@@ -44,6 +44,8 @@ urlcolor=primaryColor
 \usepackage{lmodern}
 \fi
 
+\usepackage{tikz}
+
 % \renewcommand*\rmdefault{cmdh}
 % \usepackage[OT1]{fontenc}
 
@@ -177,10 +179,7 @@ urlcolor=primaryColor
 \sbox\ANDbox{$|$}
 
 \begin{document}
-
-\hfill \textit{\footnotesize last updated: \today}
-
-\vspace{-3.9ex}
+\vspace{-5ex}
 
 \begin{header}
 	\fontsize{15 pt}{15 pt}\selectfont Willard Robinson
@@ -426,5 +425,9 @@ urlcolor=primaryColor
 \begin{onecolentry}\footnotesize
 	\textbf{Computing:} Julia, Git, \LaTeX, Matlab, R, SAS, Stata
 \end{onecolentry}
+
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=south, yshift=2ex] at (current page.south) {\textit{Last updated: \today}};
+\end{tikzpicture}
 
 \end{document}
