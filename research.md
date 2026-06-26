@@ -8,8 +8,6 @@ pagetitle: "Research | Willard Robinson"
 
 {% include research-working-papers.html %}
 
-<br>
-
 ## Works in progress
 
 {% include research-works-in-progress.html %}
