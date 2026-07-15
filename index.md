@@ -52,4 +52,4 @@ google_site_verification: "apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"
 
 <br>
 
-I am a Ph.D. student in the Economics department at North Carolina State University and a Center for Environmental and Resource Economic Policy (<a href="https://cenrep.ncsu.edu/" target="_blank">CEnREP</a>) affiliate doing research at the intersection of environmental economics and market design. In the summer of 2025, I was a graduate fellow at the Property and Environment Research Center (<a href="https://perc.org/" target="_blank">PERC</a>) in beautiful Bozeman, MT. For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
+I am a Ph.D. student in the Economics department at North Carolina State University and a Center for Environmental and Resource Economic Policy (<a href="https://cenrep.ncsu.edu/" target="_blank">CEnREP</a>) affiliate doing research at the intersection of environmental economics and market design. For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
