@@ -5,6 +5,8 @@
 _site/
 Gemfile.lock
 .claude/
+jobmarket/evals.pdf
+cv/robinson-cv-withrefs.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
