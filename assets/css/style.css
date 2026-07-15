@@ -43,6 +43,13 @@ a:hover {
   /* color: #990000; */
 }
 
+a.plain-link,
+a.plain-link:hover {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
 h4.research-paper {
   padding-left: 8px;
   /* color: #CC0000; */
