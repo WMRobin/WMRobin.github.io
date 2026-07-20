@@ -108,12 +108,6 @@
           </a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link" href="/public-goods">
-            <i class="fa-solid fa-code"></i> Public goods
-          </a>
-        </li>
-        
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         
@@ -146,24 +140,25 @@ The idea is that these are useful/interesting to me, and they may be useful/inte
 <h2 id="serial-dictator-program">Serial dictator program</h2>
 
 <style>
-table {
-  table-layout: auto;
-  width: auto;
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-}
+  table {
+    table-layout: auto;
+    width: auto;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
 </style>
 
 <p>I wrote this program to help with assigning papers to reviewers for a peer review group I helped start.</p>
 
-<p>The program is written in the wonderful <a href="https://julialang.org/" target="_blank">Julia</a> language, but I will happily translate it to other languages (most easily in R or Stata) if there is a demand!</p>
+<p>The program is written in the wonderful <a href="https://julialang.org/" target="_blank">Julia</a> language.</p>
 
-<p>The
-<a href="https://people.duke.edu/~aa88/articles/rsrcECMA.pdf" target="_blank">serial dictator</a>
-mechanism is used to fairly assign each reviewer a paper to review.
+<p>The <a href="https://people.duke.edu/~aa88/articles/rsrcECMA.pdf" target="_blank">serial dictator</a> mechanism is used
+to fairly assign each reviewer a paper to review.
 The reviewers are given a list of papers, and they submit a rank ordered list.
 These lists are then fed into the mechanism and a fair allocation is output!</p>
 
@@ -174,22 +169,22 @@ Reviewer $i$’s preferences are denoted by $P_i$.
 For this example, I’ll use the following preferences:</p>
 
 \[\begin{array}{ccc}
-  P_1 &amp; P_2 &amp; P_3 \\ \hline
-  a &amp; a &amp; b \\
-  b &amp; c &amp; a \\
-  c &amp; b &amp; c
+P_1 &amp; P_2 &amp; P_3 \\ \hline
+a &amp; a &amp; b \\
+b &amp; c &amp; a \\
+c &amp; b &amp; c
 \end{array}\]
 
 <p>To get the best possible allocation, the allocator wants to consider consider all possible orders of dictatorship.
 With three potential reviewers, these are:</p>
 
 \[\begin{array}{rl}
-  \text{order 1}: &amp; 1 \to 2 \to 3 \\
-  \text{order 2}: &amp; 1 \to 3 \to 2 \\
-  \text{order 3}: &amp; 2 \to 1 \to 3 \\
-  \text{order 4}: &amp; 2 \to 3 \to 1 \\
-  \text{order 5}: &amp; 3 \to 1 \to 2 \\
-  \text{order 6}: &amp; 3 \to 2 \to 1
+\text{order 1}: &amp; 1 \to 2 \to 3 \\
+\text{order 2}: &amp; 1 \to 3 \to 2 \\
+\text{order 3}: &amp; 2 \to 1 \to 3 \\
+\text{order 4}: &amp; 2 \to 3 \to 1 \\
+\text{order 5}: &amp; 3 \to 1 \to 2 \\
+\text{order 6}: &amp; 3 \to 2 \to 1
 \end{array}\]
 
 <p>The allocation of dictator order $k$ for individual $i$ is denoted $\mu_k(i)$.</p>
@@ -199,15 +194,20 @@ The mechanism works according to the following steps:</p>
 
 <ol>
   <li>Define the set of available objects as $A_1 = {1,2,3}$</li>
-  <li>Person 1 chooses first. All objects are in the available set, so she gets her most preferred item. So, $\mu_1(1) = a$. Update the set of available objects to be $A_2 = A_1 \setminus {\mu_1(1)}$.</li>
-  <li>Person 2 chooses her most preferred item from $A_2$. Her most preferred item is not available, so she gets her second-most preferred item. So, $\mu_1(2) = c$. Update the set of available objects to be $A_3 = A_2 \setminus {\mu_1(1), \mu_1(2)}$.</li>
-  <li>There is only one item in the available set, so the third person is assigned that item. So $\mu_1(3) = b$. (her most preferred!)</li>
+  <li>Person 1 chooses first. All objects are in the available set, so she gets her most preferred item. So, $\mu_1(1) =
+a$. Update the set of available objects to be $A_2 = A_1 \setminus {\mu_1(1)}$.</li>
+  <li>Person 2 chooses her most preferred item from $A_2$. Her most preferred item is not available, so she gets her
+second-most preferred item. So, $\mu_1(2) = c$. Update the set of available objects to be $A_3 = A_2 \setminus
+{\mu_1(1), \mu_1(2)}$.</li>
+  <li>There is only one item in the available set, so the third person is assigned that item. So $\mu_1(3) = b$. (her most
+preferred!)</li>
 </ol>
 
 <p>The final allocation for dictator order 1 is $\mu_1 = (a,c,b)$.</p>
 
 <p>How well off are the people under this allocation?
-A simple way to calculate an individual’s welfare is to subtract 4 (the number of objects + 1) from the ranking of their allocation.
+A simple way to calculate an individual’s welfare is to subtract 4 (the number of objects + 1) from the ranking of their
+allocation.
 We’ll call this the “payoff” to the individual.</p>
 
 <p>Let $P_i(\mu_1)$ be the ranking of person $i$’s allocated object; their payoff is then $4 - P_i(\mu_1)$.
@@ -217,24 +217,35 @@ This means order 1 has a payoff of 5.</p>
 
 <h3 id="how-you-can-use-this-program">How you can use this program</h3>
 
-<p>The program goes through all permutations of dictatorship orders to find the one that maximizes payoff defined in this way.
-Note that the program can handle a larger number of individuals than objects, but it cannot allocate more objects than there are people.
-This is mainly because everybody who submitted a paper for review was required to be a reviewer, so there was by design always at least as many reviewers as there were papers.</p>
+<p>The program goes through all permutations of dictatorship orders to find the one that maximizes payoff defined in this
+way.
+Note that the program can handle a larger number of individuals than objects, but it cannot allocate more objects than
+there are people.
+This is mainly because everybody who submitted a paper for review was required to be a reviewer, so there was by design
+always at least as many reviewers as there were papers.</p>
 
-<p>Another peculiarity about this program is that everybody must rank every object. In many cases, a person may deem only a small number of objects better than nothing. Because my peer review group required everyone participating to review a paper, everybody submitted a complete ranking.</p>
+<p>Another peculiarity about this program is that everybody must rank every object. In many cases, a person may deem only a
+small number of objects better than nothing. Because my peer review group required everyone participating to review a
+paper, everybody submitted a complete ranking.</p>
 
 <p>I find it interesting to see how “popular” the papers were, so the program saves a histogram table as a CSV.
 This table is called <code>rank-counts.csv</code>.
-The main allocation is saved in <code>serial-dictator-allocation.csv</code> and can be easily opened in Excel or Google Sheets.</p>
+The main allocation is saved in <code>serial-dictator-allocation.csv</code> and can be easily opened in Excel or Google
+Sheets.</p>
 
-<p>You will need to provide three parameters at the start of the program: <code>indir</code>, <code>outdir</code>, and <code>filename</code>. These are, respectively, the directory containing your preferences CSV, the directory where you would like the allocation saved, and the name of the CSV containing your preferences.
+<p>You will need to provide three parameters at the start of the program: <code>indir</code>, <code>outdir</code>, and
+<code>filename</code>. These are, respectively, the directory containing your preferences CSV, the directory where you
+would like the allocation saved, and the name of the CSV containing your preferences.
 Update these parameters and you’re good to go!</p>
 
 <h3 id="program-download-and-sample-data">Program download (and sample data)</h3>
 
-<p><a href="public-goods/serial-dictator-program/serial-dictator-program.jl" target="_blank">Download the program here</a> and use this <a href="public-goods/serial-dictator-program/example-preferences.csv" target="_blank">example data</a> to see how it works!</p>
+<p><a href="public-goods/serial-dictator-program/serial-dictator-program.jl" target="_blank">Download the program here</a>
+and use this <a href="public-goods/serial-dictator-program/example-preferences.csv" target="_blank">example data</a> to
+see how it works!</p>
 
-<p>Note that to use it, you should upload a CSV with column names that are the names of individuals and their preferences descending in favorability.
+<p>Note that to use it, you should upload a CSV with column names that are the names of individuals and their preferences
+descending in favorability.
 For example, the data for a 4-person, 3-object setting should look like the table below:</p>
 
 <div style="display: flex; justify-content: center;" width="100%">
@@ -269,7 +280,6 @@ For example, the data for a 4-person, 3-object setting should look like the tabl
     </tbody>
   </table>
 </div>
-
 
   </main>
 
