@@ -11,10 +11,18 @@ pagetitle: "CV | Willard Robinson"
 
   .section h2 {
     margin: 0;
+    margin-top: 0.75em;
+    padding-top: 0;
   }
 
   .section h4 {
     margin: 0;
+    margin-top: 0.75em;
+    padding-top: 0;
+  }
+
+  .section ul {
+    margin-bottom: 0;
   }
 
   .btn {
