@@ -3,6 +3,15 @@ layout: default
 title: "Research"
 pagetitle: "Research | Willard Robinson"
 ---
+<style>
+p {
+    font-size: 20px;
+  }
+
+  .btn.btn-sm.btn-outline-secondary {
+    font-size: 1rem;
+  }
+</style>
 
 ## Working papers
 
