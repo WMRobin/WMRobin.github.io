@@ -46,7 +46,7 @@ pagetitle: "CV | Willard Robinson"
 **B.A. Economics** (Mathematics minor, *summa cum laude*), Appalachian State University, 2020
 
 ## Teaching experience
-<font size="3">(*U.* = Undergraduate course *Ph.D.* = Doctorate course)</font>
+<font size="3">(<em>U.</em> = Undergraduate course, <em>Ph.D.</em> = Doctorate course)</font>
 
 #### Instructor
 
