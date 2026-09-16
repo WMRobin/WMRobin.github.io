@@ -50,4 +50,4 @@ I focus on questions regarding the valuation and allocation of ecosystem service
 
 For more information about me and my research, please see my [CV](cv.html) and [Research](research.html) page.
 
-<span style="font-size:125%;"><strong>I am on the 2026-2027 job market.</strong></span>
+<span style="font-size:125%;"><strong>I am on the 2026-2027 job market!</strong></span>
