@@ -3,7 +3,7 @@
 % Packages:
 \usepackage[
 ignoreheadfoot, % set margins without considering header and footer
-top=1 cm, % seperation between body and page edge from the top
+top=2cm, % seperation between body and page edge from the top
 bottom=1 cm, % seperation between body and page edge from the bottom
 left=2 cm, % seperation between body and page edge from the left
 right=2 cm, % seperation between body and page edge from the right
@@ -14,7 +14,7 @@ footskip=1.0 cm, % seperation between body and footer
 \usepackage{tabularx} % for making tables with fixed width columns
 \usepackage{array} % tabularx requires this
 \usepackage[dvipsnames]{xcolor} % for coloring text
-\definecolor{primaryColor}{RGB}{29, 75, 31} % define primary color
+\definecolor{primaryColor}{RGB}{204,0,0} % define primary color
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
@@ -46,32 +46,20 @@ urlcolor=primaryColor
 
 \usepackage{tikz}
 
-% \renewcommand*\rmdefault{cmdh}
-% \usepackage[OT1]{fontenc}
-
-% \usepackage[default,light,bold]{sourceserifpro}
-% \usepackage[T1]{fontenc}
-
-% \usepackage{lmodern}
-% \usepackage[T1]{fontenc}
-
-% \usepackage[light]{CormorantGaramond}
-
-% \usepackage{fontspec}
-% \setmainfont{QTAgateType}
-
-% \usepackage{fancyhdr}
-% \pagestyle{fancy}
-% \fancyhf{} % Clear existing headers/footers
-% \fancyhead[R]{\textit{Last updated: \today}} % Puts date in top right corner
-% \renewcommand{\headrulewidth}{0pt} % Removes the line under the header
+\usepackage{fancyhdr}
+\definecolor{gray}{RGB}{141, 148, 141}
+\pagestyle{fancy}
+\fancyhf{} % Clear existing headers/footers
+\fancyhead[R]{\textit{\color{gray}Last updated: \today}} % Puts date in top right corner
+\renewcommand{\headrulewidth}{0pt} % Removes the line under the header
+\fancyheadoffset{1cm}
 
 \usepackage{charter}
 
 % Some settings:
 \raggedright
 \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
-\pagestyle{empty} % no header or footer
+% \pagestyle{empty} % no header or footer
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
@@ -100,7 +88,8 @@ urlcolor=primaryColor
 		parsep=0.10 cm,
 		partopsep=0pt,
 		itemsep=0pt,
-		leftmargin=0.3 cm + 10pt
+		leftmargin=0.3 cm + 10pt,
+		label={}
 		]
 	}{
 	\end{itemize}
@@ -112,7 +101,7 @@ urlcolor=primaryColor
 		topsep=0.10 cm,
 		parsep=0.10 cm,
 		partopsep=0pt,
-		itemsep=0pt,
+		itemsep=-2pt,
 		leftmargin=10pt,
 		]
 	}{
@@ -253,10 +242,7 @@ urlcolor=primaryColor
 	\end{highlights}
 \end{twocolentry}
 
-% ==============================================================================
-% WORKING PAPERS ===============================================================
-% ==============================================================================
-\section{Ongoing research}
+\section{Research fields}
 
 \begin{onecolentry}
 	\begin{hangingpar}
@@ -264,45 +250,41 @@ urlcolor=primaryColor
 	\end{hangingpar}
 \end{onecolentry}
 
-\vspace{0.25cm}
-
-\subsection{Working papers}
-
-\vspace{0.1cm}
+% ==============================================================================
+% WORKING PAPERS ===============================================================
+% ==============================================================================
+\section{Working papers}
 
 \begin{paper}
-	Asymmetric Information and Transaction Costs in Voluntary Conservation Markets (\textbf{Job market paper})
-	\vspace{-0.2cm}
-	\begin{highlights}
-		\item[] \emph{Draft in progress.}
-	\end{highlights}
+	\emph{Asymmetric Information and Transaction Costs in Voluntary Conservation Markets} (\textbf{Job market paper}) \hfill [\href{https://wmrobin.github.io/research/papers/robinson-jmp.pdf}{Link}]
+	% \textbf{Abstract:}
+	% \footnotesize Emissions trading systems now cover roughly 30\% of global greenhouse gas emissions, and offsets promise substantial gains from trade between capped sectors and cheaper abatement elsewhere. I extend van Benthem and Kerr's (2013) model of nature-based offset supply: landowners hold private information about the commercial value of their land and respond to a uniform baseline-price mechanism, but must also pay a privately known fixed cost to participate. The private information and the costly participation---acting alone---reduce the social value of such a market, but are not socially harmful. Together, hower, they can be. I show that an offset market can be strictly welfare-reducing, so that closing it dominates every active policy. The two frictions play distinct roles: private information about the commercial value governs who is drawn into the market, costly participation determines how much welfare they create. Because willingness to participate is highest for those landowners with the least commercially-valuable land, the landowners who are the hardest to exclude from a market are precisely those who generate the lowest social value. Two further results follow. The optimal baseline plays a screening role absent from current protocols; and the optimal price may lie strictly below the Pigouvian benchmark, separating welfare-positive from welfare-negative landowners by exploiting differences in their willingness to participate at differing levels of policy stringency. Improving baseline accuracy, the focus of recent policy debate, is therefore necessary but not sufficient to make these markets work.
 \end{paper}
 
 \begin{paper}
-	Adoption Costs for Offsets: Evidence from California
-	\vspace{-0.2cm}
-	\begin{highlights}
-		\item[] \emph{Under review.}
-	\end{highlights}
+	\emph{Adoption Costs for Offsets: Evidence from California} \hfill [\href{https://cenrep.ncsu.edu/publications/transaction-costs-of-emissions-offsets-evidence-from-california/}{Link}]
+	% \vspace{-0.2cm}
+	\begin{highlightsforbulletentries}
+		\item Under review
+		\item First place, \emph{William D. Toussaint Best Paper Award}, NC State Economics Department
+	\end{highlightsforbulletentries}
 \end{paper}
 
 % ==============================================================================
 % WORKS IN PROGRESS ============================================================
 % ==============================================================================
-\subsection{Works in progress}
-
-\vspace{0.1cm}
+\section{Works in progress}
 
 \begin{paper}
-	Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act
+	\emph{Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act}
 \end{paper}
 
 \begin{paper}
-	The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach (with \href{https://www.linkedin.com/in/avn-econ}{\textbf{Sasha Naumenko}}, \href{https://www.linkedin.com/in/colton-leach-54a080136}{\textbf{Colton Leach}}, and \href{https://rvhaefen.wordpress.ncsu.edu/}{\textbf{Roger von Haefen}})
+	\emph{The Value of Shoreline Recreational Fishing Across Time and Space: An internal meta-regression approach} (with \href{https://www.linkedin.com/in/avn-econ}{\textbf{Sasha Naumenko}}, \href{https://www.linkedin.com/in/colton-leach-54a080136}{\textbf{Colton Leach}}, and \href{https://rvhaefen.wordpress.ncsu.edu/}{\textbf{Roger von Haefen}})
 \end{paper}
 
 \begin{paper}
-	Stability in Centralized College Major Assignment: Evidence from NCSU Engineering (with \href{https://sites.google.com/site/umutdur/}{\bfseries Umut Dur})
+	\emph{Stability in Centralized College Major Assignment: Evidence from NCSU Engineering} (with \href{https://sites.google.com/site/umutdur/}{\bfseries Umut Dur})
 \end{paper}
 
 % \begin{paper}
@@ -310,7 +292,7 @@ urlcolor=primaryColor
 % \end{paper}
 
 \begin{paper}
-	Recreation Welfare Effects with Climate Change-Induced Migration
+	\emph{Recreation Welfare Effects with Climate Change-Induced Migration}
 \end{paper}
 
 % ==============================================================================
@@ -353,6 +335,7 @@ urlcolor=primaryColor
 
 % ==============================================================================
 % TEACHING EXPERIENCE ==========================================================
+% \newpage % for aesthetics
 % ==============================================================================
 \section{Teaching experience}
  {\footnotesize \textit{Ph.D.} = Doctorate course, \textit{U.} = Undergraduate course}
@@ -408,35 +391,69 @@ urlcolor=primaryColor
 % ==============================================================================
 \section{Seminars and conference presentations (including \Star{scheduled})}
 
-\begin{twocolentry}{2026}
-	\begin{hangingpar}
-		Camp Resources, \Star{AERE @ the Southern Economic Association}, \Star{Appalachian State University}, \Star{East Carolina University}, \Star{North Carolina Statue University}
-	\end{hangingpar}
-\end{twocolentry}
+\begin{onecolentry}
+	\emph{Asymmetric Information and Transaction Costs in Voluntary Conservation Markets}
+	\begin{highlights}
+		\item \small Camp Resources XXXII (2026), \Star{AERE @ the Southern Economic Association} (2026), \Star{Appalachian State University} (2026), \Star{East Carolina University} (2026), North Carolina Statue University (2026)
+	\end{highlights}
+\end{onecolentry}
 
 \vspace{0.1cm}
 
-\begin{twocolentry}{2025}
-	\begin{hangingpar}
-		Property and Environment Research Center, NCSU Economics Third Year Workshop, NCSU Graduate Student Seminar Series
-	\end{hangingpar}
-\end{twocolentry}
+\begin{onecolentry}
+	\emph{Adoption Costs for Offsets: Evidence from California}
+	\begin{highlights}
+		\item \small NCSU Economics Third Year Workshop (2026)
+	\end{highlights}
+\end{onecolentry}
 
 \vspace{0.1cm}
 
-\begin{twocolentry}{2024}
-	\begin{hangingpar}
-		Appalachian Experimental and Environmental Workshop
-	\end{hangingpar}
-\end{twocolentry}
+\begin{onecolentry}
+	\emph{Impacts of Centralized Budget Policy on National Parks: An analysis of the Federal Land Recreation Enhancement Act}
+	\begin{highlights}
+		\item \small Property and Environment Research Center (2025), Appalachian Experimental and Environmental Workshop (2024)
+	\end{highlights}
+\end{onecolentry}
 
 \vspace{0.1cm}
 
-\begin{twocolentry}{2020}
-	\begin{hangingpar}
-		National Conference of Undergraduate Research (canceled due to Covid)
-	\end{hangingpar}
-\end{twocolentry}
+\begin{onecolentry}
+	\emph{Recreation Welfare Effects with Climate Change-Induced Migration}
+	\begin{highlights}
+		\item \small NCSU Graduate Student Seminar Series (2025)
+	\end{highlights}
+\end{onecolentry}
+
+% \begin{twocolentry}{2026}
+% 	\begin{hangingpar}
+% 		Camp Resources XXXII, \Star{AERE @ the Southern Economic Association}, \Star{Appalachian State University}, \Star{East Carolina University}, North Carolina Statue University
+% 	\end{hangingpar}
+% \end{twocolentry}
+
+% \vspace{0.1cm}
+
+% \begin{twocolentry}{2025}
+% 	\begin{hangingpar}
+% 		Property and Environment Research Center, NCSU Economics Third Year Workshop, NCSU Graduate Student Seminar Series
+% 	\end{hangingpar}
+% \end{twocolentry}
+
+% \vspace{0.1cm}
+
+% \begin{twocolentry}{2024}
+% 	\begin{hangingpar}
+% 		Appalachian Experimental and Environmental Workshop
+% 	\end{hangingpar}
+% \end{twocolentry}
+
+% \vspace{0.1cm}
+
+% \begin{twocolentry}{2020}
+% 	\begin{hangingpar}
+% 		National Conference of Undergraduate Research (canceled due to Covid)
+% 	\end{hangingpar}
+% \end{twocolentry}
 
 % ==============================================================================
 % AWARDS AND FELLOWSHIPS =======================================================
@@ -454,12 +471,17 @@ urlcolor=primaryColor
 \end{twocolentry}
 \begin{twocolentry}{2026}
 	\begin{hangingpar}
-		First place, William D. Toussaint Best Paper Award for ``Transaction Costs for Offsets: Evidence from California,'' Department of Economics
+		First place, Best Paper Award, Department of Economics
 	\end{hangingpar}
 \end{twocolentry}
 \begin{twocolentry}{2025}
 	\begin{hangingpar}
-		\href{https://perc.org/people/willard-robinson/}{Property and Environment Research Center} (PERC) graduate summer fellowship
+		PERC graduate summer fellowship, \href{https://perc.org/people/willard-robinson/}{Property and Environment Research Center}
+	\end{hangingpar}
+\end{twocolentry}
+\begin{twocolentry}{2020}
+	\begin{hangingpar}
+		Top student in economics, Appalachian State University
 	\end{hangingpar}
 \end{twocolentry}
 
@@ -514,7 +536,7 @@ European Association of Environmental Resource Economists
 			North Carolina State University \\
 			\href{mailto:Spencer_banzhaf@ncsu.edu}{Spencer\_banzhaf@ncsu.edu}
 		\end{minipage}
-		&
+		 &
 		\begin{minipage}[t]{0.45\textwidth}\small
 			\textbf{Roger von Haefen} \\
 			Professor \\
@@ -532,9 +554,8 @@ European Association of Environmental Resource Economists
 	\end{tabular}
 \end{center}
 
-
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=south, yshift=2ex] at (current page.south) {\textit{Last updated: \today}};
-\end{tikzpicture}
+% \begin{tikzpicture}[remember picture,overlay]
+% 	\node[anchor=south, yshift=2ex] at (current page.south) {\textit{Last updated: \today}};
+% \end{tikzpicture}
 
 \end{document}
