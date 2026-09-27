@@ -1,7 +1,33 @@
 title: "Willard Robinson"
+description: "Willard Robinson, environmental economist and Ph.D. candidate at NC State University."
 url: "https://wmrobin.github.io"
+author: 
+  name: Willard Robinson
+  twitter: WMRobinEcon
+defaults:
+    - scope:
+        path: ""
+      values:
+        image: /images/robinson-headshot.jpg
 destination: docs
 keep_files: [".nojekyll"]
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+twitter:
+  username: WMRobinEcon
+  card: summary
+
+social:
+  name: Willard Robinson
+  links:
+    - https://twitter.com/WMRobinEcon
+    - https://github.com/WMRobin
+
+webmaster_verifications:
+  google: apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg
 
 exclude:
   - docs/
@@ -14,6 +40,13 @@ exclude:
   - style.css
   - rank-counts.csv
   - jobmarket/
+  - "*.tex"
+  - "*.aux"
+  - "*.log"
+  - "*.out"
+  - "*.fls"
+  - "*.fdb_latexmk"
+  - "*.synctex.gz"
 
 nav_left:
   - text: "Home"
@@ -32,7 +65,10 @@ nav_left:
 nav_right:
   - icon: "fa-solid fa-envelope"
     href: "mailto:wmrobin3@ncsu.edu"
+    label: "Email"
   - icon: "fa-brands fa-x-twitter"
     href: "https://twitter.com/WMRobinEcon"
+    label: "Twitter"
   - icon: "fa-brands fa-github"
     href: "https://github.com/WMRobin"
+    label: "GitHub"

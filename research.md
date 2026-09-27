@@ -2,6 +2,7 @@
 layout: default
 title: "Research"
 pagetitle: "Research | Willard Robinson"
+description: "Research by Willard Robinson on environmental offset markets, asymmetric information, transaction costs in California's cap-and-trade program, and recreation demand."
 ---
 <style>
 p {

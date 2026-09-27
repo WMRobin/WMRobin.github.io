@@ -2,6 +2,7 @@
 layout: default
 title: "CV"
 pagetitle: "CV | Willard Robinson"
+description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics at NC State University: education, research, teaching, and presentations."
 ---
 
 <style>

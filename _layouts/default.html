@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.pagetitle | default: page.title | default: site.title }}</title>
 
-  <!-- HTML tag for GSC -->
-  {% if page.google_site_verification %}
-  <meta name="google-site-verification" content="{{ page.google_site_verification }}" />
-  {% endif %}
+  <!-- SEO: description, sharing tags, canonical URL, structured data, GSC verification -->
+  {% seo title=false %}
 
   <!-- Google Tag Manager -->
   <script>
@@ -35,23 +30,26 @@
     gtag("config", "G-PMMY7LYYMC");
   </script>
 
-  <!-- Metadata -->
+  <!-- Structured data: who the site is about -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "Person",
     "name": "Willard Robinson",
-    "alternateName": ["WR", "Will Robinson"],
-    "url": "https://wmrobin.github.io/"
+    "alternateName": "Will Robinson",
+    "jobTitle": "Ph.D. Candidate in Economics",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "North Carolina State University"
+    },
+    "url": "https://wmrobin.github.io/",
+    "image": "https://wmrobin.github.io/images/robinson-headshot.jpg",
+    "sameAs": [
+      "https://twitter.com/WMRobinEcon",
+      "https://github.com/WMRobin"
+    ]
   }
   </script>
-
-  <meta name="description"
-    content="Will Robinson is a fourth year Ph.D. student in the Economics department at North Carolina State University (NCSU)." />
-  <meta name="keywords"
-    content="North Carolina State University, Environmental Economics, cap and trade, national parks" />
-  <meta name="author" content="Willard Robinson" />
-  <meta property="og:site_name" content="Willard Robinson" />
 
   <link rel="shortcut icon" href="/images/icons/fishman-custom.svg" />
   <link rel="icon" href="/images/icons/fishman-custom.svg" />
@@ -82,7 +80,6 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <nav class="navbar navbar-expand-md navbar-dark px-3" style="background-color: #1d4b1f;">
-    <!-- <nav class="navbar navbar-expand-md navbar-dark px-3" style="background-color: #CC0000;"> -->
     <a class="navbar-brand fw-semibold" href="/">Willard Robinson</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +91,7 @@
         {% for item in site.nav_left %}
         <li class="nav-item">
           <a class="nav-link" href="{{ item.href }}">
-            <i class="fa-solid {{ item.icon }}"></i> {{ item.text }}
+            <i class="fa-solid {{ item.icon }}" aria-hidden="true"></i> {{ item.text }}
           </a>
         </li>
         {% endfor %}
@@ -102,8 +99,8 @@
       <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         {% for item in site.nav_right %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.href }}" target="_blank" rel="noopener">
-            <i class="{{ item.icon }}"></i>
+          <a class="nav-link" href="{{ item.href }}" target="_blank" rel="noopener" aria-label="{{ item.label }}">
+            <i class="{{ item.icon }}" aria-hidden="true"></i>
           </a>
         </li>
         {% endfor %}
