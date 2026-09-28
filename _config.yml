@@ -72,3 +72,6 @@ nav_right:
   - icon: "fa-brands fa-github"
     href: "https://github.com/WMRobin"
     label: "GitHub"
+  # - icon: "fab fa-orcid"
+  #   href: "https://orcid.org/0009-0003-1770-6114"
+  #   label: "ORCID profile"
