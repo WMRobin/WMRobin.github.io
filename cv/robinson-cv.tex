@@ -1,3 +1,7 @@
+% !TEX program = lualatex
+
+\DocumentMetadata{lang=en-us, pdfstandard=ua-2,tagging=on}
+
 \documentclass[12pt]{article}
 
 % for customizing section titles
@@ -20,26 +24,29 @@
 \usepackage{lastpage}
 % for one column entries (adjustwidth environment)
 \usepackage{changepage}
-% for two and three column entries
-\usepackage{paracol}
 % for conditional statements
 \usepackage{ifthen}
 % for avoiding page brake right after the section title
 \usepackage{needspace}
 % for hangingpar environment
 \usepackage{hang}
-% for using the charter font
-\usepackage{charter}
+% % for using the charter font
+% \usepackage{charter}
+\usepackage{fontspec}
+\setmainfont{XCharter} 
+
+% mark all tables as layout only
+\tagpdfsetup{table/tagging=presentation}
 
 % for adjusting page geometry
 \usepackage[
-ignoreheadfoot,
-top=2cm,
-bottom=1.5cm,
-left=2 cm,
-right=2 cm,
-footskip=1.0 cm,
-% showframe % for debugging 
+	ignoreheadfoot,
+	top=2cm,
+	bottom=1.5cm,
+	left=2 cm,
+	right=2 cm,
+	footskip=1.0 cm,
+	% showframe % for debugging 
 ]{geometry}
 
 % define colors
@@ -50,11 +57,11 @@ footskip=1.0 cm,
 % setup links, metadata, and bookmarks.
 % Load hyperref before bookmark so bookmark does not trigger an option clash.
 \usepackage[
-pdftitle={Willard Robinson CV},
-pdfauthor={Willard Robinson},
-pdfcreator={Willard Robinson},
-colorlinks=true,
-urlcolor=primaryColor
+	pdftitle={Willard Robinson CV},
+	pdfauthor={Willard Robinson},
+	pdfcreator={Willard Robinson},
+	colorlinks=true,
+	urlcolor=primaryColor
 ]{hyperref}
 % for bookmarks
 \usepackage{bookmark}
@@ -99,7 +106,8 @@ urlcolor=primaryColor
 \setlength{\columnsep}{0.15cm}
 
 % add line below section titles
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titleformat{\section}{\filright\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titleformat{\subsection}{\filright\bfseries\large}{}{0pt}{}
 
 % FORMAT: {command}{left}{before-sep}{after-sep}[right]
 % section title spacing
@@ -109,18 +117,45 @@ urlcolor=primaryColor
 \titlespacing{\subsection}{0pt}{0.1cm}{0.05cm}
 
 % custom smaller bullet points
-\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\renewcommand\labelitemii{\hbox{\small\textbullet}}
+
+% new environment for highlights
+% \newenvironment{highlights}{
+% 	\begin{itemize}[
+% 		topsep=0.10 cm,
+% 		parsep=0.10 cm,
+% 		partopsep=0pt,
+% 		itemsep=0pt,
+% 		leftmargin=0.3 cm + 10pt,
+% 		label={}
+% 		]
+% 	}{
+% 	\end{itemize}
+% }
+
+% % new environment for highlights with bullet entries
+% \newenvironment{highlightsforbulletentries}{
+% 	\begin{itemize}[
+% 		topsep=0.10 cm,
+% 		parsep=0.10 cm,
+% 		partopsep=0pt,
+% 		itemsep=-2pt,
+% 		leftmargin=10pt,
+% 		]
+% 	}{
+% 	\end{itemize}
+% }
 
 % new environment for highlights
 \newenvironment{highlights}{
 	\begin{itemize}[
 		topsep=0.10 cm,
-		parsep=0.10 cm,
 		partopsep=0pt,
-		itemsep=0pt,
 		leftmargin=0.3 cm + 10pt,
 		label={}
 		]
+	\setlength{\parsep}{0.10cm}\setlength{\itemsep}{0pt}
 	}{
 	\end{itemize}
 }
@@ -129,11 +164,10 @@ urlcolor=primaryColor
 \newenvironment{highlightsforbulletentries}{
 	\begin{itemize}[
 		topsep=0.10 cm,
-		parsep=0.10 cm,
 		partopsep=0pt,
-		itemsep=-2pt,
-		leftmargin=10pt,
+		leftmargin=20pt,
 		]
+	\setlength{\parsep}{0.10cm}\setlength{\itemsep}{-2pt}
 	}{
 	\end{itemize}
 }
@@ -157,29 +191,25 @@ urlcolor=primaryColor
 }
 
 % new environment for two column entries
-\newenvironment{twocolentry}[2][]{
-	\onecolentry
-	\def\secondColumn{#2}
-	\setcolumnwidth{\fill, 4.5 cm}
-	\begin{paracol}{2}
-	}{
-		\switchcolumn \raggedleft \secondColumn
-	\end{paracol}
-	\endonecolentry
-}
-
-% new environment for three column entries
-\newenvironment{threecolentry}[3][]{
-	\onecolentry
-	\def\thirdColumn{#3}
-	\setcolumnwidth{, \fill, 4.5 cm}
-	\begin{paracol}{3}
-		{\raggedright #2} \switchcolumn
-	}{
-		\switchcolumn \raggedleft \thirdColumn
-	\end{paracol}
-	\endonecolentry
-}
+% \newenvironment{twocolentry}[2][]{
+% 	\onecolentry
+% 	\def\secondColumn{#2}
+% 	\setcolumnwidth{\fill, 4.5 cm}
+% 	\begin{paracol}{2}
+% 	}{
+% 		\switchcolumn \raggedleft \secondColumn
+% 	\end{paracol}
+% 	\endonecolentry
+% }
+% FOR TAGGING
+\newenvironment{twocolentry}[2][]{%
+	\par\noindent\def\secondColumn{#2}%
+	\begin{minipage}[t]{\linewidth-5.1cm}\raggedright\hangindent=1em\hangafter=1\relax%
+	}
+	{%
+		\end{minipage}\hfill%
+		\begin{minipage}[t]{5cm}\raggedleft\secondColumn\end{minipage}\par\smallskip
+	}
 
 % new environment for the header
 \newenvironment{header}{
@@ -189,15 +219,17 @@ urlcolor=primaryColor
 }
 
 % star function to indicate something special (e.g., a starred item)
-\newcommand{\Star}[1]{#1\ensuremath{^*}\kern-\scriptspace}
+% \newcommand{\Star}[1]{#1\ensuremath{^*}\kern-\scriptspace}
+\newcommand{\Star}[1]{#1\textsuperscript{*}}
 
 % symbol for separating items in the header (e.g., email, phone, website)
-\newcommand{\AND}{\unskip
-	\cleaders\copy\ANDbox\hskip\wd\ANDbox
-	\ignorespaces
-}
-\newsavebox\ANDbox
-\sbox\ANDbox{$|$}
+% \newcommand{\AND}{\unskip
+% 	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+% 	\ignorespaces
+% }
+% \newsavebox\ANDbox
+% \sbox\ANDbox{$|$}
+\newcommand{\AND}{\unskip\hspace{5pt}|\hspace{5pt}\ignorespaces}
 
 % ==============================================================================
 % BEGIN DOCUMENT ===============================================================
@@ -251,7 +283,7 @@ urlcolor=primaryColor
 
 \begin{twocolentry}{2020}
 	\textbf{Appalachian State University}, B.A. Economics
-	\textit{\footnotesize (summa cum laude)}
+	\emph{\footnotesize (summa cum laude)}
 	\vspace{-0.5ex}
 	\begin{highlights}
 		\item \small Minor: Mathematics
@@ -275,13 +307,13 @@ urlcolor=primaryColor
 \section{Working papers}
 
 \begin{paper}
-	\emph{Asymmetric Information and Transaction Costs in Voluntary Conservation Markets} (\textbf{Job market paper}) \hfill [\href{https://wmrobin.github.io/research/papers/robinson-jmp.pdf}{Link}]
+	\emph{Asymmetric Information and Transaction Costs in Voluntary Conservation Markets} (\textbf{Job market paper}) \hfill [\href{https://wmrobin.github.io/research/papers/robinson-jmp.pdf}{PDF}]
 	% \textbf{Abstract:}
 	% \footnotesize Emissions trading systems now cover roughly 30\% of global greenhouse gas emissions, and offsets promise substantial gains from trade between capped sectors and cheaper abatement elsewhere. I extend van Benthem and Kerr's (2013) model of nature-based offset supply: landowners hold private information about the commercial value of their land and respond to a uniform baseline-price mechanism, but must also pay a privately known fixed cost to participate. The private information and the costly participation---acting alone---reduce the social value of such a market, but are not socially harmful. Together, hower, they can be. I show that an offset market can be strictly welfare-reducing, so that closing it dominates every active policy. The two frictions play distinct roles: private information about the commercial value governs who is drawn into the market, costly participation determines how much welfare they create. Because willingness to participate is highest for those landowners with the least commercially-valuable land, the landowners who are the hardest to exclude from a market are precisely those who generate the lowest social value. Two further results follow. The optimal baseline plays a screening role absent from current protocols; and the optimal price may lie strictly below the Pigouvian benchmark, separating welfare-positive from welfare-negative landowners by exploiting differences in their willingness to participate at differing levels of policy stringency. Improving baseline accuracy, the focus of recent policy debate, is therefore necessary but not sufficient to make these markets work.
 \end{paper}
 
 \begin{paper}
-	\emph{Adoption Costs for Offsets: Evidence from California} \hfill [\href{https://cenrep.ncsu.edu/publications/transaction-costs-of-emissions-offsets-evidence-from-california/}{Link}]
+	\emph{Adoption Costs for Offsets: Evidence from California} \hfill [\href{https://cenrep.ncsu.edu/publications/transaction-costs-of-emissions-offsets-evidence-from-california/}{PDF}]
 	\begin{highlightsforbulletentries}
 		\item Under review
 		\item First place, \emph{William D. Toussaint Best Paper Award}, NC State Economics Department
@@ -306,7 +338,7 @@ urlcolor=primaryColor
 \end{paper}
 
 \begin{paper}
-	\emph{Stability in Centralized College Major Assignment: Evidence from NCSU Engineering} (with \href{https://sites.google.com/site/umutdur/}{Umut Dur})
+	\emph{Stability in Centralized College Major Assignment} (with \href{https://sites.google.com/site/umutdur/}{Umut Dur})
 \end{paper}
 
 % ==============================================================================
@@ -314,37 +346,52 @@ urlcolor=primaryColor
 % ==============================================================================
 \section{Research experience}
 
-\begin{twocolentry}{Jan. 2024--present}
-	\begin{hangingpar}
-		\textbf{CEnREP Graduate research assistant},
-		(Environmental policy) with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
-	\end{hangingpar}
+\begin{twocolentry}
+	{Jan. 2024--present}
+	\textbf{CEnREP Graduate research assistant} for Prof. \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
+	\begin{highlightsforbulletentries}
+		\item ``\emph{Making Markets Work}''
+		\item ``\emph{The Marke for Environmental Offsets}''
+	\end{highlightsforbulletentries}
 \end{twocolentry}
 
-\begin{twocolentry}{Jan. 2025--Jan. 2026}
-	\begin{hangingpar}
-		\textbf{Graduate research assistant} (Matching theory) with \href{https://sites.google.com/site/umutdur/home}{Umut Dur}
-	\end{hangingpar}
+% \begin{twocolentry}{Jan. 2024--present}
+% 	\begin{hangingpar}
+% 		\textbf{CEnREP Graduate research assistant},
+% 		(Environmental policy) with \href{https://spencerbanzhaf.wordpress.ncsu.edu/}{Spencer Banzhaf}
+% 	\end{hangingpar}
+% \end{twocolentry}
+
+\begin{twocolentry}
+	{Jan. 2025--Jan. 2026}
+	\textbf{Graduate research assistant} for Prof. \href{https://sites.google.com/site/umutdur/home}{Umut Dur}
+	\begin{highlightsforbulletentries}
+		\item \emph{``Stability in Centralized College Major Assignment''}
+	\end{highlightsforbulletentries}
 \end{twocolentry}
 
-\begin{twocolentry}{Aug. 2020--May 2022}
-	\begin{hangingpar}
-		\textbf{Graduate research assistant} (Agricultural policy) with \href{https://www.nickhagerty.com/}{Nick Hagerty}
-	\end{hangingpar}
+\begin{twocolentry}
+	{Aug. 2020--May 2022}
+	\textbf{Graduate research assistant} for Prof. \href{https://www.nickhagerty.com/}{Nick Hagerty}
+	\begin{highlightsforbulletentries}
+		\item \emph{``Anticipatory Effects of Regulating the Commons''} with Ellen Bruno (2025), Journal of Environmental Economics and Management, vol. 132: 103183
+	\end{highlightsforbulletentries}
 \end{twocolentry}
 
-\begin{twocolentry}{Jun. 2019--May 2020}
-	\begin{hangingpar}
-		\textbf{Research assistant}
-		(Non-market valuation) with \href{https://economics.appstate.edu/directory/john-whitehead-phd}{John Whitehead}
-	\end{hangingpar}
+\begin{twocolentry}
+	{Jun. 2019--May 2020}
+	\textbf{Research assistant} for Prof. \href{https://economics.appstate.edu/directory/john-whitehead-phd}{John Whitehead}
+	\begin{highlightsforbulletentries}
+		\item Non-market valuation
+	\end{highlightsforbulletentries}
 \end{twocolentry}
 
-\begin{twocolentry}{Jun. 2019--May 2020}
-	\begin{hangingpar}
-		\textbf{Research assistant}
-		(Experimental economics) with \href{https://sites.google.com/a/appstate.edu/brock_stoddard/home}{Brock Stoddard}
-	\end{hangingpar}
+\begin{twocolentry}
+	{Jun. 2019--May 2020}
+	\textbf{Research assistant} for Prof. \href{https://sites.google.com/a/appstate.edu/brock_stoddard/home}{Brock Stoddard}
+	\begin{highlightsforbulletentries}
+		\item Experimental economics
+	\end{highlightsforbulletentries}
 \end{twocolentry}
 
 % ==============================================================================
@@ -355,7 +402,7 @@ urlcolor=primaryColor
 
 \vspace{-0.1cm}
 
-{\footnotesize \textit{Ph.D.} = Doctorate course, \textit{U.} = Undergraduate course}
+{\footnotesize \textit{U.} = Undergraduate course, \textit{Ph.D.} = Doctorate course}
 
 %% -----------------------------------------------------------------------------
 %% INSTRUCTOR ------------------------------------------------------------------
@@ -364,16 +411,42 @@ urlcolor=primaryColor
 
 \vspace{0.1cm}
 
-\begin{twocolentry}{NC State University}
-	\begin{hangingpar}
-		ARE 336 (\textit{U.}): Introduction to Environmental and Resource Economics; \textit{Fall '25}
-	\end{hangingpar}
+\textbf{NC State University}
+\begin{twocolentry}
+	{Fall '25}
+	{ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}}
 \end{twocolentry}
-\begin{twocolentry}{Montana State University}
-	\begin{hangingpar}
-		ECNS 202 (\textit{U.}): Principles of Macroeconomics; \textit{Fall '21, Spring '22}
-	\end{hangingpar}
+% \begin{onecolentry}
+% 	ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}
+% 	\begin{highlights}
+% 		\item Fall '25
+% 	\end{highlights}
+% \end{onecolentry}
+
+\vspace{0.1cm}
+
+\textbf{Montana State University}
+\begin{twocolentry}
+	{Fall '21, Spring '22}
+	{ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}}
 \end{twocolentry}
+% \begin{onecolentry}
+% 	ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}
+% 	\begin{highlights}
+% 		\item Fall '21, Spring '22
+% 	\end{highlights}
+% \end{onecolentry}
+
+% \begin{twocolentry}{NC State University}
+% 	\begin{hangingpar}
+% 		ARE 336 (\textit{U.}): Introduction to Environmental and Resource Economics; \textit{Fall '25}
+% 	\end{hangingpar}
+% \end{twocolentry}
+% \begin{twocolentry}{Montana State University}
+% 	\begin{hangingpar}
+% 		ECNS 202 (\textit{U.}): Principles of Macroeconomics; \textit{Fall '21, Spring '22}
+% 	\end{hangingpar}
+% \end{twocolentry}
 
 %% -----------------------------------------------------------------------------
 %% TEACHING ASSISTANT ----------------------------------------------------------
@@ -382,42 +455,104 @@ urlcolor=primaryColor
 
 \vspace{0.1cm}
 
-\begin{twocolentry}{NC State University}
-	\begin{onecolentry}
-		ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}
-		\begin{highlights}
-			\item Fall '23, Spring '25
-		\end{highlights}
-	\end{onecolentry}
-	\begin{onecolentry}
-		ECG 702 (\emph{Ph.D.}): \emph{Microeconomic Theory II}
-		\begin{highlights}
-			\item Spring '24
-		\end{highlights}
-	\end{onecolentry}
-	\begin{onecolentry}
-		EC 201 (\emph{U.}): \emph{Principles of Microeconomics}
-		\begin{highlights}
-			\item Fall '22, Spring '22
-			\item Fall '23 (Head TA)
-		\end{highlights}
-	\end{onecolentry}
+\textbf{NC State University}
+
+\begin{twocolentry}
+	{Fall '23, Spring '25, Fall '26}
+	{ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}}
+\end{twocolentry}
+\begin{twocolentry}
+	{Fall '26}
+	{ARE 301 (\emph{U.}): \emph{Intermediate Microeconomics}}
+\end{twocolentry}
+\begin{twocolentry}
+	{Spring '24}
+	{ECG 702 (\emph{Ph.D.}): \emph{Microeconomic Theory II}}
+\end{twocolentry}
+\begin{twocolentry}
+	{Fall '22, Spring '22, Fall '23}
+	{EC 201 (\emph{U.}): \emph{Principles of Microeconomics}}
+	\begin{highlights}
+		\item Head TA in Fall '23
+	\end{highlights}
 \end{twocolentry}
 
-\begin{twocolentry}{Montana State University}
-	\begin{onecolentry}
-		ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}
-		\begin{highlights}
-			\item Summer '21, Summer '22
-		\end{highlights}
-	\end{onecolentry}
-	\begin{onecolentry}
-		ECNS 403R (\emph{U.}): \emph{Introductory Econometrics}
-		\begin{highlights}
-			\item Fall '20
-		\end{highlights}
-	\end{onecolentry}
+% \begin{onecolentry}
+% 	ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}
+% 	\begin{highlights}
+% 		\item Fall '23, Spring '25
+% 	\end{highlights}
+% 	ECG 702 (\emph{Ph.D.}): \emph{Microeconomic Theory II}
+% 	\begin{highlights}
+% 		\item Spring '24
+% 	\end{highlights}
+% 	EC 201 (\emph{U.}): \emph{Priciples of Microeconomics}
+% 	\begin{highlights}
+% 		\item Fall '22, Spring '22; Head TA: Fall '23
+% 	\end{highlights}
+% \end{onecolentry}
+
+\vspace{0.1cm}
+
+\textbf{Montana State University}
+\begin{twocolentry}
+	{Summer '21, Summer '22}
+	{ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}}
 \end{twocolentry}
+\begin{twocolentry}
+	{Fall '20}
+	{ECNS 403R (\emph{U.}): \emph{(Honors) Introductory Econometrics}}
+\end{twocolentry}
+
+% \begin{onecolentry}
+% 	ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}
+% 	\begin{highlights}
+% 		\item Summer '21, Summer '22
+% 	\end{highlights}
+% 	ECNS 403R (\emph{U.}): \emph{Introductory Econometrics}
+% 	\begin{highlights}
+% 		\item Fall '20
+% 	\end{highlights}
+% \end{onecolentry}
+
+% \vspace{0.1cm}
+
+% \begin{twocolentry}{NC State University}
+% 	\begin{onecolentry}
+% 		ARE 336 (\emph{U.}): \emph{Introduction to Environmental and Resource Economics}
+% 		\begin{highlights}
+% 			\item Fall '23, Spring '25
+% 		\end{highlights}
+% 	\end{onecolentry}
+% 	\begin{onecolentry}
+% 		ECG 702 (\emph{Ph.D.}): \emph{Microeconomic Theory II}
+% 		\begin{highlights}
+% 			\item Spring '24
+% 		\end{highlights}
+% 	\end{onecolentry}
+% 	\begin{onecolentry}
+% 		EC 201 (\emph{U.}): \emph{Principles of Microeconomics}
+% 		\begin{highlights}
+% 			\item Fall '22, Spring '22
+% 			\item Fall '23 (Head TA)
+% 		\end{highlights}
+% 	\end{onecolentry}
+% \end{twocolentry}
+
+% \begin{twocolentry}{Montana State University}
+% 	\begin{onecolentry}
+% 		ECNS 202 (\emph{U.}): \emph{Principles of Macroeconomics}
+% 		\begin{highlights}
+% 			\item Summer '21, Summer '22
+% 		\end{highlights}
+% 	\end{onecolentry}
+% 	\begin{onecolentry}
+% 		ECNS 403R (\emph{U.}): \emph{Introductory Econometrics}
+% 		\begin{highlights}
+% 			\item Fall '20
+% 		\end{highlights}
+% 	\end{onecolentry}
+% \end{twocolentry}
 
 % \begin{twocolentry}{NC State University}
 % 	\begin{hangingpar}
@@ -443,12 +578,15 @@ urlcolor=primaryColor
 % ==============================================================================
 % PRESENTATIONS ================================================================
 % ==============================================================================
-\section{Seminars and conference presentations (including \Star{scheduled})}
+% \section{Seminars and conference presentations (including \Star{scheduled})}
+% \section{Seminars and conference presentations (including \Star{scheduled})}
+\section{Seminars and conference presentations (including \texorpdfstring{\Star{scheduled}}{scheduled*})}
 
 \begin{onecolentry}
 	\emph{Asymmetric Information and Transaction Costs in Voluntary Conservation Markets}
 	\begin{highlights}
-		\item \small Camp Resources XXXII (2026), \Star{AERE @ the Southern Economic Association} (2026), \Star{Appalachian State University} (2026), \Star{East Carolina University} (2026), North Carolina Statue University (2026)
+		% \item \small Camp Resources XXXII (2026), \Star{AERE @ the Southern Economic Association} (2026), \Star{Appalachian State University} (2026), \Star{East Carolina University} (2026), North Carolina State University (2026)
+		\item \small Camp Resources XXXII (2026), AERE @ the Southern Economic Association (2026), Appalachian State University (2026), East Carolina University (2026), North Carolina State University (2026)
 	\end{highlights}
 \end{onecolentry}
 
