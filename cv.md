@@ -36,7 +36,7 @@ description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics
   }
 </style>
 
-<a href="/cv/robinson-cv-ncsu.pdf" target="_blank" class="btn btn-danger mb-3"><i class="fa-solid fa-file-pdf me-2"></i>Download CV (PDF)</a>
+<a href="/cv/robinson-cv.pdf" target="_blank" class="btn btn-danger mb-3"><i class="fa-solid fa-file-pdf me-2"></i>Download CV (PDF)</a>
 
 ## Education
 
