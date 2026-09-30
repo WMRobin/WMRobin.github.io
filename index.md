@@ -6,41 +6,33 @@ google_site_verification: "apxfYeosxqOM5sqd5ri-fn1RF0FpUE1oWwMbxMH9Rkg"
 description: "Willard Robinson is an environmental economist and Ph.D. candidate at NC State University on the 2026–27 job market, studying environmental markets and offsets."
 ---
 
-<script type="application/ld+json">
-  {
-    "@context" : "https://schema.org",
-    "@type" : "WebSite",
-    "name" : "Willard Robinson",
-    "url" : "https://wmrobin.github.io/"
-  }
-</script>
-
 <style>
   figure {
+    margin-left: -100px;
+    padding-left: 0;
     margin-right: 15px;
     text-align: center;
+    width: 35%;
+    max-width: 100vw;
     float: left;
   }
-
   figure img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
   }
-
   /* Style for the caption */
   figcaption {
     display: block;
     margin-top: 5px;
   }
-  
   p {
     font-size: 20px;
   }
 </style>
 
-<figure style="max-width: 250px;">
-  <img src="/images/robinson-headshot.jpg" alt="Willard Robinson headshot">
+<figure>
+  <img src="/images/WillRobinson.jpg" alt="Willard Robinson headshot">
 </figure>
 
 <br>

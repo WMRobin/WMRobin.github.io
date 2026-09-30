@@ -8,7 +8,7 @@ defaults:
     - scope:
         path: ""
       values:
-        image: /images/robinson-headshot.jpg
+        image: /images/WillRobinson.jpg
 destination: docs
 keep_files: [".nojekyll"]
 
