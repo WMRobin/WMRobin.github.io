@@ -26,17 +26,25 @@ description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics
     margin-bottom: 0;
   }
 
-  .btn {
-    background-color: #327d32;
+  /* make btn match links */
+  .btn-custom {
+    color: #ffffff;
+    background-color: #1f6f78;
     border-color: #1d4b1f;
   }
-  .btn:hover {
-    background-color: #1d4b1f;
+  
+  .btn-custom:hover,
+  .btn-custom:focus,
+  .btn-custom:focus-visible,
+  .btn-custom:active,
+  .btn-custom.active {
+    color: #ffffff;
+    background-color: #2a9aa5;
     border-color: #1d4b1f;
   }
 </style>
 
-<a href="/cv/robinson-cv.pdf" target="_blank" class="btn btn-danger mb-3"><i class="fa-solid fa-file-pdf me-2"></i>Link to CV (PDF)</a>
+<a href="/cv/robinson-cv.pdf" target="_blank" class="btn btn-custom mb-3"><i class="fa-solid fa-file-pdf me-2"></i>Link to CV (PDF)</a>
 
 ## Education
 
