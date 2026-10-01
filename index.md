@@ -8,7 +8,7 @@ description: "Willard Robinson is an environmental economist and Ph.D. candidate
 
 <style>
   figure {
-    margin-left: -100px;
+    /* margin-left: -100px; */
     padding-left: 0;
     margin-right: 15px;
     text-align: center;
