@@ -36,7 +36,7 @@ description: "Willard Robinson is an environmental economist and Ph.D. candidate
 </figure>
 
 <br>
-I am a Ph.D. student in Economics at North Carolina State University and a <a href="https://cenrep.ncsu.edu/">CEnREP</a> affiliate. My research sits at the intersection of environmental economics and market design, focusing on how ecosystem services are valued and allocated.
+I am a Ph.D. student in Economics at North Carolina State University and a <a href="https://cenrep.ncsu.edu/">CEnREP</a> affiliate conducting research on the valuation and allocation of ecosystem services.
 
 My job market paper, <a href="https://wmrobin.github.io/research/papers/robinson-jmp.pdf" target="_blank"><em>Asymmetric Information and Transaction Costs in Voluntary Conservation Markets</em></a>, shows that nature-based offset markets can reduce social welfare when landowners hold private information about their land and face costly participation, because the landowners most eager to join are those who generate the least social value. In related work, I estimate the transaction costs that keep California firms from using cheaper carbon offsets. I also study how climate change-induced fish migration may affect demand for recreational fishing.
 
