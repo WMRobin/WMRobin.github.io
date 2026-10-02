@@ -4,6 +4,7 @@ url: "https://wmrobin.github.io"
 author: 
   name: Willard Robinson
   twitter: WMRobinEcon
+  googlescholar: https://scholar.google.com/citations?hl=en&user=N2DAyCQAAAAJ
 defaults:
     - scope:
         path: ""
@@ -66,12 +67,15 @@ nav_right:
   - icon: "fa-solid fa-envelope"
     href: "mailto:wmrobin3@ncsu.edu"
     label: "Email"
-  - icon: "fa-brands fa-x-twitter"
-    href: "https://twitter.com/WMRobinEcon"
-    label: "Twitter"
+  # - icon: "fa-brands fa-x-twitter"
+  #   href: "https://twitter.com/WMRobinEcon"
+  #   label: "Twitter"
   - icon: "fa-brands fa-github"
     href: "https://github.com/WMRobin"
     label: "GitHub"
-  # - icon: "fab fa-orcid"
-  #   href: "https://orcid.org/0009-0003-1770-6114"
-  #   label: "ORCID profile"
+  - icon: "fab fa-google-scholar"
+    href: "https://scholar.google.com/citations?hl=en&user=N2DAyCQAAAAJ"
+    label: "Google Scholar"
+  - icon: "fab fa-orcid"
+    href: "https://orcid.org/0009-0003-1770-6114"
+    label: "ORCID profile"
