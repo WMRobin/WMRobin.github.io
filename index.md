@@ -7,33 +7,50 @@ description: "Willard Robinson is an environmental economist and Ph.D. candidate
 ---
 
 <style>
+  /* Base styles (mobile first) */
   figure {
-    /* margin-left: -100px; */
-    padding-left: 0;
-    margin-right: 15px;
-    text-align: center;
-    width: 35%;
+    width: 100%; /* full width on mobile */
     max-width: 100vw;
-    float: left;
+    margin: 0 0 15px 0;
+    text-align: center;
   }
+
   figure img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* scales to fit container */
+    aspect-ratio: 1/1; /* make sure it's square */
+    object-fit: cover; /* prevents stretching */
     display: block;
   }
-  /* Style for the caption */
+  
   figcaption {
     display: block;
     margin-top: 5px;
   }
+  
   p {
     font-size: 20px;
+  }
+
+  /* --- Desktop styles (screens 768px and wider) --- */
+  @media (min-width: 768px) {
+    figure {
+      width: 400px; /* lock container */
+      float: left;
+      margin-right: 15px;
+    }
+
+    figure img {
+      height: 400px; /* expand to web height */
+    }
   }
 </style>
 
 <figure>
-  <img src="/images/WillRobinson.jpg" alt="Willard Robinson headshot">
+  <img src="/images/WillRobinson.jpg" class="responsive-banner" alt="Willard Robinson headshot">
 </figure>
+<!-- <figure>
+  <img src="/images/WillRobinson.jpg" alt="Willard Robinson headshot">
+</figure> -->
 
 <br>
 I am a Ph.D. student in Economics at North Carolina State University and a <a href="https://cenrep.ncsu.edu/">CEnREP</a> affiliate conducting research on the valuation and allocation of ecosystem services.
