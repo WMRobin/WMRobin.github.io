@@ -50,6 +50,8 @@ description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics
 
 **Ph.D. Economics**, North Carolina State University, 2027 (expected)
 
+<span style="display: inline-block; transform: translateY(-10px);">Committee: <a href="https://spencerbanzhaf.wordpress.ncsu.edu/" target="_blank">Spencer Banzhaf</a> (advisor), <a href="https://cnr.ncsu.edu/directory/erin-o-sills/" target="_blank">Erin Sills</a>, <a href="https://rvhaefen.wordpress.ncsu.edu/" target="_blank">Roger von Haefen</a>, <a href="https://www.zhenxuanwang.org/" target="_blank">Zhenxuan Wang</a></span>
+
 **M.S. Applied Economics**, Montana State University, 2022
 
 **B.A. Economics** (Mathematics minor, *summa cum laude*), Appalachian State University, 2020
@@ -65,6 +67,8 @@ description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics
   * Fall 2021, Spring 2022
 
 #### Graduate teaching assistant
+* **ARE 301** (*U.*): Intermediate Microeconomics (NCSU)
+  * Fall 2026
 * **ARE 336** (*U.*): Environmental and Resource Economics (NCSU)
   * Fall 2023, Spring 2025
 * **ECG 702** (*Ph.D.*): Microeconomic Theory II (NCSU)
@@ -73,6 +77,8 @@ description: "Curriculum vitae of Willard Robinson, Ph.D. candidate in economics
   * Fall 2022, Spring 2023, Fall 2023
 * **ECNS 202** (*U.*): Principles of Macroeconomics (MSU)
   * Summer 2021, Summer 2022
+* **ECNS 403R** (*U.*): (Honors) Introductory Econometrics (MSU)
+  * Fall 2020
 
 ## Research experience
 
